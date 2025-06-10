@@ -24,6 +24,19 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         
+    - name: Debug secrets
+      env:
+        MONGO_URI: ${{ secrets.MONGO_URI }}
+        MONGO_DB_NAME: ${{ secrets.MONGO_DB_NAME }}
+        MONGO_COLLECTION_NAME: ${{ secrets.MONGO_COLLECTION_NAME }}
+      run: |
+        echo "MONGO_URI is set: ${{ secrets.MONGO_URI != '' }}"
+        echo "MONGO_DB_NAME is set: ${{ secrets.MONGO_DB_NAME != '' }}"
+        echo "MONGO_COLLECTION_NAME is set: ${{ secrets.MONGO_COLLECTION_NAME != '' }}"
+        echo "MONGO_URI length: ${#MONGO_URI}"
+        echo "MONGO_DB_NAME: $MONGO_DB_NAME"
+        echo "MONGO_COLLECTION_NAME: $MONGO_COLLECTION_NAME"
+        
     - name: Run query script
       env:
         MONGO_URI: ${{ secrets.MONGO_URI }}
@@ -43,4 +56,4 @@ jobs:
         else
           git commit -m "Update daily data - $(date '+%Y-%m-%d %H:%M:%S')"
           git push
-        fi 
+        fi
