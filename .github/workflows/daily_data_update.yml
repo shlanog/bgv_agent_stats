@@ -29,13 +29,6 @@ jobs:
         MONGO_URI: ${{ secrets.MONGO_URI }}
         MONGO_DB_NAME: ${{ secrets.MONGO_DB_NAME }}
         MONGO_COLLECTION_NAME: ${{ secrets.MONGO_COLLECTION_NAME }}
-      run: |
-        echo "MONGO_URI is set: ${{ secrets.MONGO_URI != '' }}"
-        echo "MONGO_DB_NAME is set: ${{ secrets.MONGO_DB_NAME != '' }}"
-        echo "MONGO_COLLECTION_NAME is set: ${{ secrets.MONGO_COLLECTION_NAME != '' }}"
-        echo "MONGO_URI length: ${#MONGO_URI}"
-        echo "MONGO_DB_NAME: $MONGO_DB_NAME"
-        echo "MONGO_COLLECTION_NAME: $MONGO_COLLECTION_NAME"
         
     - name: Run query script
       env:
@@ -44,6 +37,19 @@ jobs:
         MONGO_COLLECTION_NAME: ${{ secrets.MONGO_COLLECTION_NAME }}
       run: python query_by_date.py
       
+    - name: Check if data file was generated
+      run: |
+        echo "Checking if data_by_date.json was generated..."
+        if [ -f "data_by_date.json" ]; then
+          echo "✅ data_by_date.json exists"
+          echo "File size: $(wc -c < data_by_date.json) bytes"
+          echo "First few lines:"
+          head -10 data_by_date.json
+        else
+          echo "❌ data_by_date.json was not generated"
+          exit 1
+        fi
+      
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
@@ -51,9 +57,12 @@ jobs:
         git add data_by_date.json
         
         # Check if there are changes to commit
+        echo "Checking for changes..."
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
+          echo "Changes detected, committing..."
           git commit -m "Update daily data - $(date '+%Y-%m-%d %H:%M:%S')"
           git push
+          echo "✅ Changes committed and pushed successfully"
         fi
