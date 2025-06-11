@@ -75,8 +75,6 @@ git config --local user.name "$(git config user.name)"
 
 # Add the data file
 git add data_by_date.json
-git commit -m "Update daily data - $(date '+%Y-%m-%d %H:%M:%S')"
-
 # Check if there are changes to commit
 echo "Checking for changes..."
 if git diff --staged --quiet; then
