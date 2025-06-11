@@ -85,7 +85,13 @@ else
     git commit -m "$commit_message"
     
     echo "🚀 Pushing to remote repository..."
-    git push
+    # Check if upstream is set, if not set it
+    if ! git rev-parse --abbrev-ref --symbolic-full-name @{u} &>/dev/null; then
+        echo "Setting upstream branch..."
+        git push --set-upstream origin master
+    else
+        git push
+    fi
     echo "✅ Changes committed and pushed successfully"
 fi
 
