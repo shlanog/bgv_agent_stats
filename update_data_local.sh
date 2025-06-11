@@ -61,13 +61,6 @@ if [ -f "data_by_date.json" ]; then
     echo "✅ data_by_date.json exists"
     file_size=$(wc -c < data_by_date.json)
     echo "File size: $file_size bytes"
-    
-    if [ $file_size -gt 0 ]; then
-        echo "First few lines:"
-        head -10 data_by_date.json
-    else
-        echo "⚠️  Warning: File is empty"
-    fi
 else
     echo "❌ data_by_date.json was not generated"
     exit 1
@@ -85,10 +78,17 @@ git add data_by_date.json
 git commit -m "Update daily data - $(date '+%Y-%m-%d %H:%M:%S')"
 
 # Check if there are changes to commit
-
-echo "🚀 Pushing to remote repository..."
-git push origin master
-echo "✅ Changes committed and pushed successfully"
+echo "Checking for changes..."
+if git diff --staged --quiet; then
+    echo "🔄 No changes to commit - data is up to date"
+else
+    echo "📝 Changes detected, committing..."
+    commit_message="Update daily data - $(date '+%Y-%m-%d %H:%M:%S')"
+    git commit -m "$commit_message"
+    
+    echo "🚀 Pushing to remote repository..."
+    git push
+    echo "✅ Changes committed and pushed successfully"
 fi
 
 echo "🎉 Daily data update completed successfully!" 
