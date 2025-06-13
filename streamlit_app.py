@@ -11,7 +11,6 @@ st.set_page_config(
 )
 
 # Load data and convert format if needed
-@st.cache_data
 def load_data():
     try:
         with open('data_by_date.json', 'r') as f:
