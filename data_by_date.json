@@ -1281,11 +1281,63 @@
                     "successful_onboardings": 1,
                     "failed_onboardings": 0,
                     "discarded_candidates": 0
+                },
+                {
+                    "process_id": "684bf071896bb2f28c984275",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "684bf5b2b32c5c0d397e3bd1",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "684bf989896bb2f28c98428c",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "684bff367245187050dee50e",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1
+                },
+                {
+                    "process_id": "684c0c29ef0f3e57438199e9",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
                 }
             ],
             "summary": {
-                "total_individuals": 13,
-                "successful_onboardings": 12,
+                "total_individuals": 18,
+                "successful_onboardings": 16,
+                "failed_onboardings": 0,
+                "discarded_candidates": 2
+            }
+        },
+        "1298474": {
+            "processes": [
+                {
+                    "process_id": "684bf7e2ef0f3e57438199ca",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 0,
                 "failed_onboardings": 0,
                 "discarded_candidates": 1
             }
