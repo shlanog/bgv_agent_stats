@@ -697,13 +697,20 @@
                     "successful_onboardings": 0,
                     "failed_onboardings": 0,
                     "discarded_candidates": 1
+                },
+                {
+                    "process_id": "6842bf450fdc74acd957f32c",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1
                 }
             ],
             "summary": {
-                "total_individuals": 1,
+                "total_individuals": 2,
                 "successful_onboardings": 0,
                 "failed_onboardings": 0,
-                "discarded_candidates": 1
+                "discarded_candidates": 2
             }
         },
         "1298474": {
@@ -1340,6 +1347,159 @@
                 "successful_onboardings": 0,
                 "failed_onboardings": 0,
                 "discarded_candidates": 1
+            }
+        }
+    },
+    "18/06/2025": {
+        "1298474": {
+            "processes": [
+                {
+                    "process_id": "685253e405141e9281123793",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 0,
+                "failed_onboardings": 0,
+                "discarded_candidates": 1
+            }
+        },
+        "1187116": {
+            "processes": [
+                {
+                    "process_id": "68525928cbacca82a1558207",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1
+                },
+                {
+                    "process_id": "68525ad63c64c559ac33d278",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "6852620b3c64c559ac33d27c",
+                    "total_individuals": 3,
+                    "successful_onboardings": 3,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "685271499a1d4de970376a74",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "685283a1cbacca82a1558259",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "6852887e3c64c559ac33d2ab",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "68528c9a9a1d4de970376a89",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "68529173f5e857d842adf7b9",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "685294173c64c559ac33d2c7",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1
+                },
+                {
+                    "process_id": "6852957af5e857d842adf7c2",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "6852982b3c64c559ac33d2d1",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "68529ae73c64c559ac33d2d6",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "6852a13e3c64c559ac33d2f1",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "6852a77805141e92811237b2",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 1,
+                    "discarded_candidates": 0
+                },
+                {
+                    "process_id": "6852abbd3c64c559ac33d2f7",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 1,
+                    "discarded_candidates": 0
+                }
+            ],
+            "summary": {
+                "total_individuals": 17,
+                "successful_onboardings": 13,
+                "failed_onboardings": 2,
+                "discarded_candidates": 2
+            }
+        }
+    },
+    "19/06/2025": {
+        "1187116": {
+            "processes": [
+                {
+                    "process_id": "68538af1cbacca82a15582a1",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 1,
+                    "discarded_candidates": 0
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 0,
+                "failed_onboardings": 1,
+                "discarded_candidates": 0
             }
         }
     }
