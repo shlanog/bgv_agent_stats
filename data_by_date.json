@@ -2677,13 +2677,20 @@
                     "successful_onboardings": 0,
                     "failed_onboardings": 0,
                     "discarded_candidates": 3
+                },
+                {
+                    "process_id": "685bcd74cbacca82a1558797",
+                    "total_individuals": 3,
+                    "successful_onboardings": 2,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1
                 }
             ],
             "summary": {
-                "total_individuals": 29,
-                "successful_onboardings": 24,
+                "total_individuals": 32,
+                "successful_onboardings": 26,
                 "failed_onboardings": 0,
-                "discarded_candidates": 5
+                "discarded_candidates": 6
             }
         },
         "514833": {
@@ -2834,11 +2841,18 @@
                     "successful_onboardings": 1,
                     "failed_onboardings": 0,
                     "discarded_candidates": 0
+                },
+                {
+                    "process_id": "685bcdf0cbacca82a155879a",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
                 }
             ],
             "summary": {
-                "total_individuals": 21,
-                "successful_onboardings": 20,
+                "total_individuals": 22,
+                "successful_onboardings": 21,
                 "failed_onboardings": 0,
                 "discarded_candidates": 1
             }
