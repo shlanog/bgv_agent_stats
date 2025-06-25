@@ -2670,13 +2670,20 @@
                     "successful_onboardings": 1,
                     "failed_onboardings": 0,
                     "discarded_candidates": 0
+                },
+                {
+                    "process_id": "685bcbeccbacca82a155878f",
+                    "total_individuals": 3,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 3
                 }
             ],
             "summary": {
-                "total_individuals": 26,
+                "total_individuals": 29,
                 "successful_onboardings": 24,
                 "failed_onboardings": 0,
-                "discarded_candidates": 2
+                "discarded_candidates": 5
             }
         },
         "514833": {
