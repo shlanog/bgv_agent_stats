@@ -2904,13 +2904,20 @@
                     "successful_onboardings": 1,
                     "failed_onboardings": 0,
                     "discarded_candidates": 0
+                },
+                {
+                    "process_id": "685beaa4f5e857d842adfc4d",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1
                 }
             ],
             "summary": {
-                "total_individuals": 27,
+                "total_individuals": 28,
                 "successful_onboardings": 26,
                 "failed_onboardings": 0,
-                "discarded_candidates": 1
+                "discarded_candidates": 2
             }
         }
     }
