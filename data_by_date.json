@@ -3675,11 +3675,18 @@
                     "successful_onboardings": 0,
                     "failed_onboardings": 0,
                     "discarded_candidates": 1
+                },
+                {
+                    "process_id": "68623ef61a014f8359f4feea",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0
                 }
             ],
             "summary": {
-                "total_individuals": 12,
-                "successful_onboardings": 8,
+                "total_individuals": 13,
+                "successful_onboardings": 9,
                 "failed_onboardings": 0,
                 "discarded_candidates": 4
             }
