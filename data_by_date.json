@@ -5801,6 +5801,25 @@
                 "discarded_candidates": 0,
                 "verifications_initiated": 7
             }
+        },
+        "1187116": {
+            "processes": [
+                {
+                    "process_id": "6865ffb198f3a59c3800bd7c",
+                    "total_individuals": 6,
+                    "successful_onboardings": 2,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 4,
+                    "verifications_initiated": 8
+                }
+            ],
+            "summary": {
+                "total_individuals": 6,
+                "successful_onboardings": 2,
+                "failed_onboardings": 0,
+                "discarded_candidates": 4,
+                "verifications_initiated": 8
+            }
         }
     }
 }
