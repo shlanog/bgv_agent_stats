@@ -5933,14 +5933,30 @@
                     "failed_onboardings": 0,
                     "discarded_candidates": 0,
                     "verifications_initiated": 1
+                },
+                {
+                    "process_id": "686642b8e5ad4075ccdbfa3c",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1
+                },
+                {
+                    "process_id": "6866437c98f3a59c3800bf45",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1
                 }
             ],
             "summary": {
-                "total_individuals": 23,
-                "successful_onboardings": 22,
+                "total_individuals": 25,
+                "successful_onboardings": 24,
                 "failed_onboardings": 0,
                 "discarded_candidates": 1,
-                "verifications_initiated": 29
+                "verifications_initiated": 31
             }
         },
         "591950": {
@@ -6067,6 +6083,25 @@
                 "failed_onboardings": 0,
                 "discarded_candidates": 5,
                 "verifications_initiated": 37
+            }
+        },
+        "905072": {
+            "processes": [
+                {
+                    "process_id": "6866438da9feb26cb7b749c0",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1,
+                    "verifications_initiated": 0
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 0,
+                "failed_onboardings": 0,
+                "discarded_candidates": 1,
+                "verifications_initiated": 0
             }
         }
     }
