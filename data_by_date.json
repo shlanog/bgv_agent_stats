@@ -6037,14 +6037,22 @@
                     "failed_onboardings": 0,
                     "discarded_candidates": 0,
                     "verifications_initiated": 3
+                },
+                {
+                    "process_id": "68667592a9feb26cb7b74af3",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1
                 }
             ],
             "summary": {
-                "total_individuals": 36,
-                "successful_onboardings": 35,
+                "total_individuals": 37,
+                "successful_onboardings": 36,
                 "failed_onboardings": 0,
                 "discarded_candidates": 1,
-                "verifications_initiated": 48
+                "verifications_initiated": 49
             }
         },
         "591950": {
