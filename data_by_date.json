@@ -6011,14 +6011,22 @@
                     "failed_onboardings": 0,
                     "discarded_candidates": 0,
                     "verifications_initiated": 2
+                },
+                {
+                    "process_id": "686638c898f3a59c3800bef8",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 5
                 }
             ],
             "summary": {
-                "total_individuals": 17,
-                "successful_onboardings": 12,
+                "total_individuals": 18,
+                "successful_onboardings": 13,
                 "failed_onboardings": 0,
                 "discarded_candidates": 5,
-                "verifications_initiated": 32
+                "verifications_initiated": 37
             }
         }
     }
