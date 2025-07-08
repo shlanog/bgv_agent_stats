@@ -8010,13 +8010,21 @@
                     "failed_onboardings": 0,
                     "discarded_candidates": 0,
                     "verifications_initiated": 3
+                },
+                {
+                    "process_id": "686cec9a98f3a59c3800ca99",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1,
+                    "verifications_initiated": 0
                 }
             ],
             "summary": {
-                "total_individuals": 17,
+                "total_individuals": 18,
                 "successful_onboardings": 16,
                 "failed_onboardings": 0,
-                "discarded_candidates": 1,
+                "discarded_candidates": 2,
                 "verifications_initiated": 66
             }
         },
