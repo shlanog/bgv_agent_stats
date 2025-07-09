@@ -8584,5 +8584,26 @@
                 "verifications_initiated": 5
             }
         }
+    },
+    "09/07/2025": {
+        "514833": {
+            "processes": [
+                {
+                    "process_id": "686de1e6f3ebb4e5e45b6603",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 4
+            }
+        }
     }
 }
