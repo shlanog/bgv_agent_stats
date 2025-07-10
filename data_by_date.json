@@ -9631,12 +9631,20 @@
                     "failed_onboardings": 0,
                     "discarded_candidates": 0,
                     "verifications_initiated": 4
+                },
+                {
+                    "process_id": "686f653ef3ebb4e5e45b7017",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 1,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 0
                 }
             ],
             "summary": {
-                "total_individuals": 6,
+                "total_individuals": 7,
                 "successful_onboardings": 6,
-                "failed_onboardings": 0,
+                "failed_onboardings": 1,
                 "discarded_candidates": 0,
                 "verifications_initiated": 28
             }
