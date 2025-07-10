@@ -9727,14 +9727,22 @@
                     "failed_onboardings": 0,
                     "discarded_candidates": 0,
                     "verifications_initiated": 4
+                },
+                {
+                    "process_id": "686fa3b4c2b81e08e544185c",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3
                 }
             ],
             "summary": {
-                "total_individuals": 9,
-                "successful_onboardings": 8,
+                "total_individuals": 10,
+                "successful_onboardings": 9,
                 "failed_onboardings": 1,
                 "discarded_candidates": 0,
-                "verifications_initiated": 36
+                "verifications_initiated": 39
             }
         },
         "1298474": {
