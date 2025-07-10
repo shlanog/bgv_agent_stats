@@ -12,11 +12,11 @@ st.set_page_config(
 
 # User ID to email mapping
 USER_ID_MAP = {
-    "514833": "manish.bisht@ongrid.in",
-    "591950": "vikram.thakur@ongrid.in",
-    "905072": "vikash.singh@ongrid.in",
-    "1081989": "sushma.negi@ongrid.in",
-    "1187116": "sanchit.deshwal@ongrid.in"
+    "514833": "Manish Bisht",
+    "591950": "Vikram Thakur",
+    "905072": "Vikash Singh",
+    "1081989": "Sushma Negi",
+    "1187116": "Sanchit Deshwal"
 }
 
 def get_user_display_name(user_id):
