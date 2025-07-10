@@ -9674,13 +9674,21 @@
                     "failed_onboardings": 0,
                     "discarded_candidates": 0,
                     "verifications_initiated": 4
+                },
+                {
+                    "process_id": "686f6bcef3ebb4e5e45b70b3",
+                    "total_individuals": 2,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 1,
+                    "discarded_candidates": 1,
+                    "verifications_initiated": 0
                 }
             ],
             "summary": {
-                "total_individuals": 4,
+                "total_individuals": 6,
                 "successful_onboardings": 4,
-                "failed_onboardings": 0,
-                "discarded_candidates": 0,
+                "failed_onboardings": 1,
+                "discarded_candidates": 1,
                 "verifications_initiated": 8
             }
         }
