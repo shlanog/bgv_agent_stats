@@ -10,6 +10,19 @@ st.set_page_config(
     layout="wide"
 )
 
+# User ID to email mapping
+USER_ID_MAP = {
+    "514833": "manish.bisht@ongrid.in",
+    "591950": "vikram.thakur@ongrid.in",
+    "905072": "vikash.singh@ongrid.in",
+    "1081989": "sushma.negi@ongrid.in",
+    "1187116": "sanchit.deshwal@ongrid.in"
+}
+
+def get_user_display_name(user_id):
+    """Get the display name for a user ID (email if available, otherwise user ID)"""
+    return USER_ID_MAP.get(str(user_id), str(user_id))
+
 # Load data and convert format if needed
 def load_data():
     try:
@@ -126,7 +139,7 @@ def main():
             summary = user_data['summary']
 
             table_data.append({
-                'User ID': user_id,
+                'User ID': get_user_display_name(user_id),
                 'Processes': len(user_data['processes']),
                 'Total Individuals': summary['total_individuals'],
                 'Successful': summary['successful_onboardings'],
@@ -144,18 +157,23 @@ def main():
         
         # User selector for detailed process view
         st.markdown("### 🔍 Detailed Process Information")
-        selected_user = st.selectbox(
+        
+        # Create a mapping for the selectbox (display name -> user_id)
+        user_display_options = {get_user_display_name(user_id): user_id for user_id in date_data.keys()}
+        
+        selected_user_display = st.selectbox(
             "Select a user to view their individual processes:",
-            list(date_data.keys()),
+            list(user_display_options.keys()),
             key="user_selector"
         )
         
-        if selected_user:
-            user_data = date_data[selected_user]
+        if selected_user_display:
+            selected_user_id = user_display_options[selected_user_display]
+            user_data = date_data[selected_user_id]
             
             # Show individual processes
             if user_data['processes']:
-                st.write(f"**Individual Processes for {selected_user}:**")
+                st.write(f"**Individual Processes for {selected_user_display}:**")
                 process_df = pd.DataFrame(user_data['processes'])
                 st.dataframe(process_df, use_container_width=True)
             else:
