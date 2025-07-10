@@ -139,7 +139,7 @@ def main():
             summary = user_data['summary']
 
             table_data.append({
-                'User ID': get_user_display_name(user_id),
+                'User': get_user_display_name(user_id),
                 'Processes': len(user_data['processes']),
                 'Total Individuals': summary['total_individuals'],
                 'Successful': summary['successful_onboardings'],
