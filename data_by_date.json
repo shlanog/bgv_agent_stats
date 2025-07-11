@@ -9986,12 +9986,20 @@
                     "failed_onboardings": 0,
                     "discarded_candidates": 0,
                     "verifications_initiated": 5
+                },
+                {
+                    "process_id": "6870d3e681138568d11fb8c1",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 1,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 0
                 }
             ],
             "summary": {
-                "total_individuals": 18,
+                "total_individuals": 19,
                 "successful_onboardings": 18,
-                "failed_onboardings": 0,
+                "failed_onboardings": 1,
                 "discarded_candidates": 0,
                 "verifications_initiated": 61
             }
@@ -10061,14 +10069,22 @@
                     "failed_onboardings": 1,
                     "discarded_candidates": 0,
                     "verifications_initiated": 0
+                },
+                {
+                    "process_id": "6870d65a57390bb7f1bd3d2a",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3
                 }
             ],
             "summary": {
-                "total_individuals": 8,
-                "successful_onboardings": 7,
+                "total_individuals": 9,
+                "successful_onboardings": 8,
                 "failed_onboardings": 1,
                 "discarded_candidates": 0,
-                "verifications_initiated": 33
+                "verifications_initiated": 36
             }
         },
         "1187116": {
@@ -10326,14 +10342,22 @@
                     "failed_onboardings": 0,
                     "discarded_candidates": 0,
                     "verifications_initiated": 6
+                },
+                {
+                    "process_id": "6870d3a44e20646447aa18e7",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4
                 }
             ],
             "summary": {
-                "total_individuals": 6,
-                "successful_onboardings": 6,
+                "total_individuals": 7,
+                "successful_onboardings": 7,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 36
+                "verifications_initiated": 40
             }
         }
     }
