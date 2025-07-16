@@ -23,6 +23,18 @@ def get_user_display_name(user_id):
     """Get the display name for a user ID (email if available, otherwise user ID)"""
     return USER_ID_MAP.get(str(user_id), str(user_id))
 
+def format_verification_types(verification_types_count):
+    """Format verification types count for display"""
+    if not verification_types_count:
+        return "None"
+    
+    # Sort by count (descending) then by type name
+    sorted_verifications = sorted(verification_types_count.items(), key=lambda x: (-x[1], x[0]))
+    
+    # Format as "TYPE:count, TYPE:count"
+    formatted = ", ".join([f"{vtype}:{count}" for vtype, count in sorted_verifications])
+    return formatted
+
 # Load data and convert format if needed
 def load_data():
     try:
@@ -41,6 +53,14 @@ def load_data():
                     total_successful = sum(p.get('successful_onboardings', 0) for p in processes)
                     total_failed = sum(p.get('failed_onboardings', 0) for p in processes)
                     total_discarded = sum(p.get('discarded_candidates', 0) for p in processes)
+                    total_verifications_initiated = sum(p.get('verifications_initiated', 0) for p in processes)
+                    
+                    # Aggregate verification types count for this user
+                    user_verification_types = {}
+                    for process in processes:
+                        verification_types = process.get('verification_types_count', {})
+                        for verification_type, count in verification_types.items():
+                            user_verification_types[verification_type] = user_verification_types.get(verification_type, 0) + count
                     
                     # Create the new structure with processes and summary
                     converted_data[date_key][user_id] = {
@@ -49,7 +69,9 @@ def load_data():
                             'total_individuals': total_individuals,
                             'successful_onboardings': total_successful,
                             'failed_onboardings': total_failed,
-                            'discarded_candidates': total_discarded
+                            'discarded_candidates': total_discarded,
+                            'verifications_initiated': total_verifications_initiated,
+                            'verification_types_count': user_verification_types
                         }
                     }
             return converted_data
@@ -155,6 +177,90 @@ def main():
         df = pd.DataFrame(table_data)
         st.dataframe(df, use_container_width=True)
         
+        # Compact verification types breakdown
+        st.markdown("#### 🔍 Verification Types by User")
+        
+        # Sort users by the same order as the table (by total individuals)
+        sorted_users = sorted(date_data.items(), key=lambda x: x[1]['summary']['total_individuals'], reverse=True)
+        
+        # Create compact verification display using Streamlit containers
+        with st.container():
+            st.markdown("""
+            <style>
+            .stContainer > div {
+                background: linear-gradient(135deg, rgba(28, 131, 225, 0.08), rgba(28, 131, 225, 0.02));
+                border-radius: 10px;
+                padding: 15px;
+                margin: 10px 0;
+                border: 1px solid rgba(28, 131, 225, 0.1);
+            }
+            .verification-badge {
+                background: rgba(255, 255, 255, 0.1);
+                padding: 4px 8px;
+                border-radius: 4px;
+                margin: 2px;
+                display: inline-block;
+                font-size: 14px;
+            }
+            .total-badge {
+                background: rgba(28, 131, 225, 0.3);
+                padding: 4px 8px;
+                border-radius: 4px;
+                margin: 2px;
+                display: inline-block;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            </style>
+            """, unsafe_allow_html=True)
+            
+            # Calculate total verification types across all users
+            total_verification_types = {}
+            for user_id, user_data in sorted_users:
+                verification_types = user_data['summary'].get('verification_types_count', {})
+                for verification_type, count in verification_types.items():
+                    total_verification_types[verification_type] = total_verification_types.get(verification_type, 0) + count
+            
+            # Display total row first
+            if total_verification_types:
+                sorted_total_verifications = sorted(total_verification_types.items(), key=lambda x: -x[1])
+                
+                col1, col2 = st.columns([1, 4])
+                
+                with col1:
+                    st.markdown("**📊 Total:**")
+                
+                with col2:
+                    total_text = ""
+                    for vtype, count in sorted_total_verifications:
+                        total_text += f'<span class="total-badge">{vtype}: {count}</span> '
+                    
+                    st.markdown(total_text, unsafe_allow_html=True)
+                
+                # Add separator
+                st.markdown("---")
+            
+            for user_id, user_data in sorted_users:
+                user_name = get_user_display_name(user_id)
+                verification_types = user_data['summary'].get('verification_types_count', {})
+                
+                if verification_types:
+                    sorted_verifications = sorted(verification_types.items(), key=lambda x: -x[1])
+                    
+                    # Create one row per user
+                    col1, col2 = st.columns([1, 4])
+                    
+                    with col1:
+                        st.markdown(f"**{user_name}:**")
+                    
+                    with col2:
+                        # Create verification badges
+                        verification_text = ""
+                        for vtype, count in sorted_verifications:
+                            verification_text += f'<span class="verification-badge">{vtype}: {count}</span> '
+                        
+                        st.markdown(verification_text, unsafe_allow_html=True)
+        
         # User selector for detailed process view
         st.markdown("### 🔍 Detailed Process Information")
         
@@ -174,14 +280,34 @@ def main():
             # Show individual processes
             if user_data['processes']:
                 st.write(f"**Individual Processes for {selected_user_display}:**")
-                process_df = pd.DataFrame(user_data['processes'])
-                st.dataframe(process_df, use_container_width=True)
+                
+                # Format the processes data for better display
+                formatted_processes = []
+                for process in user_data['processes']:
+                    formatted_process = process.copy()
+                    # Format verification types for better display
+                    if 'verification_types_count' in formatted_process:
+                        verification_types = formatted_process['verification_types_count']
+                        formatted_process['verification_types_count'] = format_verification_types(verification_types)
+                    formatted_processes.append(formatted_process)
+                
+                process_df = pd.DataFrame(formatted_processes)
+                st.dataframe(
+                    process_df, 
+                    use_container_width=True,
+                    column_config={
+                        "verification_types_count": st.column_config.TextColumn(
+                            "Verification Types",
+                            width="large",
+                            help="Types and counts of verifications for this process"
+                        )
+                    }
+                )
             else:
                 st.write("No processes found for this user.")
     
     # Footer
     st.markdown("---")
-    st.markdown("*Data updated from MongoDB collection*")
 
 if __name__ == "__main__":
     main() 
