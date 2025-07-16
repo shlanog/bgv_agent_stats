@@ -21655,12 +21655,21 @@
                     "verification_types_count": {
                         "EMPV": 1
                     }
+                },
+                {
+                    "process_id": "68779439839fb69040e717f9",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 1,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 0,
+                    "verification_types_count": {}
                 }
             ],
             "summary": {
-                "total_individuals": 23,
+                "total_individuals": 24,
                 "successful_onboardings": 23,
-                "failed_onboardings": 0,
+                "failed_onboardings": 1,
                 "discarded_candidates": 0,
                 "verifications_initiated": 111,
                 "verification_types_count": {
