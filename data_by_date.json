@@ -21346,16 +21346,27 @@
                     "verification_types_count": {
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "6877a3c1efb3cfe0d27d673a",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 39,
-                "successful_onboardings": 39,
+                "total_individuals": 40,
+                "successful_onboardings": 40,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 93,
+                "verifications_initiated": 94,
                 "verification_types_count": {
-                    "CCRV": 39,
+                    "CCRV": 40,
                     "PAV": 22,
                     "EDUV": 23,
                     "EMPV": 5,
