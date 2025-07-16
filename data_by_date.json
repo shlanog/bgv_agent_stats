@@ -13037,5 +13037,53 @@
                 "verifications_initiated": 0
             }
         }
+    },
+    "16/07/2025": {
+        "514833": {
+            "processes": [
+                {
+                    "process_id": "68771c3e4da9578367bdb0c0",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1
+                },
+                {
+                    "process_id": "68771d73839fb69040e71498",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1
+                }
+            ],
+            "summary": {
+                "total_individuals": 2,
+                "successful_onboardings": 2,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 2
+            }
+        },
+        "1081989": {
+            "processes": [
+                {
+                    "process_id": "68771ceb59436c11caf4e755",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 3
+            }
+        }
     }
 }
