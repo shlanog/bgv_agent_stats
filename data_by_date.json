@@ -24913,23 +24913,36 @@
                         "CCRV": 1,
                         "EDUV": 1
                     }
+                },
+                {
+                    "process_id": "68792e3f59436c11caf4f2b5",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "PANV": 1,
+                        "CCRV": 1,
+                        "LAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 32,
-                "successful_onboardings": 29,
+                "total_individuals": 33,
+                "successful_onboardings": 30,
                 "failed_onboardings": 2,
                 "discarded_candidates": 1,
-                "verifications_initiated": 92,
+                "verifications_initiated": 95,
                 "verification_types_count": {
                     "CC": 3,
-                    "CCRV": 25,
+                    "CCRV": 26,
                     "PAV": 16,
                     "EDUV": 16,
                     "EMPV": 11,
                     "AV": 13,
-                    "PANV": 4,
-                    "LAV": 4
+                    "PANV": 5,
+                    "LAV": 5
                 }
             }
         },
