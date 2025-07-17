@@ -24937,20 +24937,34 @@
                     "verification_types_count": {
                         "PVLF": 1
                     }
+                },
+                {
+                    "process_id": "687931ac4da9578367bdb6da",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "EDUV": 1,
+                        "EMPV": 1,
+                        "PAV": 1,
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 34,
-                "successful_onboardings": 31,
+                "total_individuals": 35,
+                "successful_onboardings": 32,
                 "failed_onboardings": 2,
                 "discarded_candidates": 1,
-                "verifications_initiated": 96,
+                "verifications_initiated": 100,
                 "verification_types_count": {
                     "CC": 3,
-                    "CCRV": 26,
-                    "PAV": 16,
-                    "EDUV": 16,
-                    "EMPV": 11,
+                    "CCRV": 27,
+                    "PAV": 17,
+                    "EDUV": 17,
+                    "EMPV": 12,
                     "AV": 13,
                     "PANV": 5,
                     "LAV": 5,
