@@ -24523,20 +24523,32 @@
                         "PAV": 1,
                         "EMPV": 1
                     }
+                },
+                {
+                    "process_id": "6878f7e559436c11caf4f29a",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "PAV": 1,
+                        "EMPV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 55,
-                "successful_onboardings": 55,
+                "total_individuals": 56,
+                "successful_onboardings": 56,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 112,
+                "verifications_initiated": 114,
                 "verification_types_count": {
                     "CCRV": 35,
                     "GDC": 3,
-                    "PAV": 14,
+                    "PAV": 15,
                     "EDUV": 9,
-                    "EMPV": 16,
+                    "EMPV": 17,
                     "PVLF": 13,
                     "AV": 6,
                     "LAV": 8,
