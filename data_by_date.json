@@ -24951,19 +24951,32 @@
                         "PAV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "6879379f924db4307e7a6c49",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "EDUV": 1,
+                        "PAV": 1,
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 35,
-                "successful_onboardings": 32,
+                "total_individuals": 36,
+                "successful_onboardings": 33,
                 "failed_onboardings": 2,
                 "discarded_candidates": 1,
-                "verifications_initiated": 100,
+                "verifications_initiated": 103,
                 "verification_types_count": {
                     "CC": 3,
-                    "CCRV": 27,
-                    "PAV": 17,
-                    "EDUV": 17,
+                    "CCRV": 28,
+                    "PAV": 18,
+                    "EDUV": 18,
                     "EMPV": 12,
                     "AV": 13,
                     "PANV": 5,
