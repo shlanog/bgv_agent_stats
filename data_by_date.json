@@ -25830,6 +25830,33 @@
                     "GDC": 1
                 }
             }
+        },
+        "591950": {
+            "processes": [
+                {
+                    "process_id": "6879c6b0839fb69040e71d8b",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "LADV": 1
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 2,
+                "verification_types_count": {
+                    "CCRV": 1,
+                    "LADV": 1
+                }
+            }
         }
     }
 }
