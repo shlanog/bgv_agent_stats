@@ -27239,22 +27239,50 @@
                         "CCRV": 1,
                         "LAV": 1
                     }
+                },
+                {
+                    "process_id": "687a4d24efb3cfe0d27d73f0",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "PANV": 1,
+                        "CCRV": 1,
+                        "LAV": 1
+                    }
+                },
+                {
+                    "process_id": "687a4dd5efb3cfe0d27d73f4",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "PANV": 1,
+                        "CCRV": 1,
+                        "LAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 26,
-                "successful_onboardings": 26,
+                "total_individuals": 28,
+                "successful_onboardings": 28,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 103,
+                "verifications_initiated": 111,
                 "verification_types_count": {
-                    "CCRV": 25,
+                    "CCRV": 27,
                     "PAV": 8,
                     "EDUV": 15,
                     "EMPV": 18,
-                    "AV": 15,
-                    "PANV": 7,
-                    "LAV": 11,
+                    "AV": 17,
+                    "PANV": 9,
+                    "LAV": 13,
                     "PVLF": 1,
                     "GDC": 2,
                     "PADV": 1
