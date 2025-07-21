@@ -16,7 +16,8 @@ USER_ID_MAP = {
     "591950": "Vikram Thakur",
     "905072": "Vikash Singh",
     "1081989": "Sushma Negi",
-    "1187116": "Sanchit Deshwal"
+    "1187116": "Sanchit Deshwal",
+    "611429": "Deepak Chawla",
 }
 
 def get_user_display_name(user_id):
