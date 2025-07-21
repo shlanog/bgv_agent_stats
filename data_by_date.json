@@ -28248,25 +28248,52 @@
                         "PAV": 1,
                         "EDUV": 1
                     }
+                },
+                {
+                    "process_id": "687e289be2430f45df107bf7",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "CCRV": 1,
+                        "LAV": 1
+                    }
+                },
+                {
+                    "process_id": "687e29ade2430f45df107c1f",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "PANV": 1,
+                        "CCRV": 1,
+                        "LAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 31,
-                "successful_onboardings": 31,
+                "total_individuals": 33,
+                "successful_onboardings": 33,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 92,
+                "verifications_initiated": 99,
                 "verification_types_count": {
-                    "CCRV": 25,
+                    "CCRV": 27,
                     "PAV": 16,
                     "EDUV": 16,
                     "EMPV": 7,
                     "GDC": 4,
                     "PVLF": 4,
-                    "AV": 9,
+                    "AV": 11,
                     "CC": 2,
-                    "PANV": 2,
-                    "LAV": 7
+                    "PANV": 3,
+                    "LAV": 9
                 }
             }
         },
