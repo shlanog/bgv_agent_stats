@@ -131,7 +131,7 @@ def main():
         col1, col2, col3 = st.columns(3)
         
         with col1:
-            st.metric("👥 Total Users", total_users)
+            st.metric("👥 Total Users", total_users)    
         
         with col2:
             st.metric("👤 Total Individuals", overall_individuals)
@@ -140,14 +140,14 @@ def main():
             st.metric("🔍 Verifications Initiated", overall_verifications_initiated)
         
         # Second row - outcome metrics
-        col4, col5 = st.columns(2)
+        col4, col5, col6 = st.columns(3)
         
         with col4:
             st.metric("✅ Successful Onboardings", overall_successful)
         
         with col5:
             st.metric("🗑️ Discarded Candidates", overall_discarded)
-            
+        
         st.markdown("---")
         
         # Single section with user summary and details
