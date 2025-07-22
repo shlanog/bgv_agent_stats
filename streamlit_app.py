@@ -123,7 +123,7 @@ def main():
         overall_individuals = sum(user_data['summary']['total_individuals'] for user_data in date_data.values())
         overall_successful = sum(user_data['summary']['successful_onboardings'] for user_data in date_data.values())
         overall_failed = sum(user_data['summary']['failed_onboardings'] for user_data in date_data.values())
-        overall_discarded = sum(user_data['summary']['discarded_candidates'] for user_data in date_data.values())
+        overall_discarded = sum(user_data['summary']['discarded_candidates'] for user_data in date_data.values()) + overall_failed
         overall_verifications_initiated = sum(user_data['summary']['verifications_initiated'] for user_data in date_data.values())
         
         # Display overall metrics in two rows for better responsiveness
@@ -140,15 +140,12 @@ def main():
             st.metric("🔍 Verifications Initiated", overall_verifications_initiated)
         
         # Second row - outcome metrics
-        col4, col5, col6 = st.columns(3)
+        col4, col5 = st.columns(2)
         
         with col4:
             st.metric("✅ Successful Onboardings", overall_successful)
         
         with col5:
-            st.metric("❌ Failed Onboardings", overall_failed)
-
-        with col6:
             st.metric("🗑️ Discarded Candidates", overall_discarded)
             
         st.markdown("---")
@@ -166,8 +163,7 @@ def main():
                 'Processes': len(user_data['processes']),
                 'Total Individuals': summary['total_individuals'],
                 'Successful': summary['successful_onboardings'],
-                'Failed': summary['failed_onboardings'],
-                'Discarded': summary['discarded_candidates'],
+                'Discarded': summary['discarded_candidates'] + summary['failed_onboardings'],
                 'Verifications Initiated': summary.get('verifications_initiated', 0)
             })
         
