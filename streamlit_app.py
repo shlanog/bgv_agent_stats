@@ -282,6 +282,11 @@ def main():
                 formatted_processes = []
                 for process in user_data['processes']:
                     formatted_process = process.copy()
+                    # Combine failed onboardings with discarded candidates
+                    if 'failed_onboardings' in formatted_process and 'discarded_candidates' in formatted_process:
+                        formatted_process['discarded_candidates'] = formatted_process['discarded_candidates'] + formatted_process['failed_onboardings']
+                        # Remove the failed_onboardings field
+                        del formatted_process['failed_onboardings']
                     # Format verification types for better display
                     if 'verification_types_count' in formatted_process:
                         verification_types = formatted_process['verification_types_count']
