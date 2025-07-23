@@ -32386,21 +32386,59 @@
                         "CCRV": 1,
                         "PVLF": 1
                     }
+                },
+                {
+                    "process_id": "68805899f6b2ca2bb20b7be3",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "CCRV": 1,
+                        "PVLF": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 6,
-                "successful_onboardings": 6,
+                "total_individuals": 7,
+                "successful_onboardings": 7,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 22,
+                "verifications_initiated": 25,
                 "verification_types_count": {
-                    "AV": 4,
-                    "CCRV": 6,
+                    "AV": 5,
+                    "CCRV": 7,
                     "PAV": 4,
                     "EDUV": 4,
                     "EMPV": 2,
-                    "PVLF": 2
+                    "PVLF": 3
+                }
+            }
+        },
+        "591950": {
+            "processes": [
+                {
+                    "process_id": "688057f8f6b2ca2bb20b7bd5",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "DLV": 1
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 1,
+                "verification_types_count": {
+                    "DLV": 1
                 }
             }
         }
