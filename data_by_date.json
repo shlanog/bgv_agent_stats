@@ -38023,19 +38023,30 @@
                         "PAV": 1,
                         "EDUV": 1
                     }
+                },
+                {
+                    "process_id": "68832fd3e2430f45df10a099",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "EDUV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 12,
-                "successful_onboardings": 12,
+                "total_individuals": 13,
+                "successful_onboardings": 13,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 64,
+                "verifications_initiated": 65,
                 "verification_types_count": {
                     "AV": 11,
                     "CCRV": 12,
                     "PAV": 10,
-                    "EDUV": 10,
+                    "EDUV": 11,
                     "EMPV": 5,
                     "GDC": 6,
                     "LAV": 8,
