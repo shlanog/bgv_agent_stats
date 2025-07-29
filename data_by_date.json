@@ -44357,19 +44357,32 @@
                         "EDUV": 1,
                         "EMPV": 2
                     }
+                },
+                {
+                    "process_id": "6888e2f113c1b9bf77848e5f",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "LAV": 1,
+                        "PAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 32,
-                "successful_onboardings": 32,
+                "total_individuals": 33,
+                "successful_onboardings": 33,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 102,
+                "verifications_initiated": 105,
                 "verification_types_count": {
-                    "CCRV": 31,
-                    "PAV": 20,
+                    "CCRV": 32,
+                    "PAV": 21,
                     "EDUV": 20,
-                    "LAV": 1,
+                    "LAV": 2,
                     "AV": 3,
                     "GDC": 1,
                     "EMPV": 13,
