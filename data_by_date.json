@@ -42698,19 +42698,30 @@
                     "verification_types_count": {
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "6888ae34b5f7197692781d32",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 32,
-                "successful_onboardings": 32,
+                "total_individuals": 33,
+                "successful_onboardings": 33,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 143,
+                "verifications_initiated": 144,
                 "verification_types_count": {
                     "PANV": 14,
                     "LAV": 11,
                     "PAV": 12,
-                    "CCRV": 31,
+                    "CCRV": 32,
                     "PVLF": 4,
                     "GDC": 11,
                     "EDUV": 20,
