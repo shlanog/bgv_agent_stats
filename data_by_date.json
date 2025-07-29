@@ -41790,17 +41790,29 @@
                         "AV": 1,
                         "PVLF": 1
                     }
+                },
+                {
+                    "process_id": "6888475b5748e4e544a7c8e6",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "PVLF": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 1,
-                "successful_onboardings": 1,
+                "total_individuals": 2,
+                "successful_onboardings": 2,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 2,
+                "verifications_initiated": 4,
                 "verification_types_count": {
-                    "AV": 1,
-                    "PVLF": 1
+                    "AV": 2,
+                    "PVLF": 2
                 }
             }
         }
