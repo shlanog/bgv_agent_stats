@@ -45751,18 +45751,30 @@
                     "verification_types_count": {
                         "PAV": 6
                     }
+                },
+                {
+                    "process_id": "6889c26bad190e438643e375",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "EDUV": 1,
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 23,
-                "successful_onboardings": 23,
+                "total_individuals": 24,
+                "successful_onboardings": 24,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 54,
+                "verifications_initiated": 56,
                 "verification_types_count": {
                     "AV": 1,
-                    "CCRV": 12,
-                    "EDUV": 7,
+                    "CCRV": 13,
+                    "EDUV": 8,
                     "PVLF": 1,
                     "EMPV": 3,
                     "LAV": 1,
