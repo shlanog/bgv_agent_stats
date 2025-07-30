@@ -44764,6 +44764,64 @@
                     "EHC": 1
                 }
             }
+        },
+        "1081989": {
+            "processes": [
+                {
+                    "process_id": "688998d9b5f7197692782067",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 6,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "LAV": 1,
+                        "EDUV": 1,
+                        "EMPV": 3
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 6,
+                "verification_types_count": {
+                    "CCRV": 1,
+                    "LAV": 1,
+                    "EDUV": 1,
+                    "EMPV": 3
+                }
+            }
+        },
+        "905072": {
+            "processes": [
+                {
+                    "process_id": "68899a85b5f719769278206b",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "CCRV": 1
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 2,
+                "verification_types_count": {
+                    "AV": 1,
+                    "CCRV": 1
+                }
+            }
         }
     }
 }
