@@ -45273,17 +45273,43 @@
                     "verification_types_count": {
                         "EHC": 1
                     }
+                },
+                {
+                    "process_id": "6889dc5e13c1b9bf7784926c",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "PANV": 1,
+                        "CCRV": 1
+                    }
+                },
+                {
+                    "process_id": "6889dd26ad190e438643e454",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "PANV": 1,
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 21,
-                "successful_onboardings": 21,
+                "total_individuals": 23,
+                "successful_onboardings": 23,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 64,
+                "verifications_initiated": 70,
                 "verification_types_count": {
-                    "PANV": 5,
-                    "CCRV": 17,
+                    "PANV": 7,
+                    "CCRV": 19,
                     "GDC": 5,
                     "LAV": 2,
                     "EDUV": 7,
@@ -45294,7 +45320,7 @@
                     "CC": 2,
                     "PADV": 1,
                     "PAV": 12,
-                    "AV": 1,
+                    "AV": 3,
                     "PAPV": 1,
                     "EREF": 1,
                     "LADV": 1
