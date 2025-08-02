@@ -51431,17 +51431,29 @@
                         "LAV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "688d9b9250b7a6ad5fe5d8a5",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "EDUV": 1,
+                        "EMPV": 2
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 2,
-                "successful_onboardings": 2,
+                "total_individuals": 3,
+                "successful_onboardings": 3,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 10,
+                "verifications_initiated": 13,
                 "verification_types_count": {
-                    "EMPV": 2,
-                    "EDUV": 3,
+                    "EMPV": 4,
+                    "EDUV": 4,
                     "LAV": 2,
                     "CCRV": 2,
                     "GDC": 1
