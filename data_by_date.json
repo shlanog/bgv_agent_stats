@@ -51400,5 +51400,40 @@
                 }
             }
         }
+    },
+    "02/08/2025": {
+        "1187116": {
+            "processes": [
+                {
+                    "process_id": "688d8d786fdb91eb0e9bce54",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 7,
+                    "verification_types_count": {
+                        "EMPV": 2,
+                        "EDUV": 2,
+                        "LAV": 1,
+                        "CCRV": 1,
+                        "GDC": 1
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 7,
+                "verification_types_count": {
+                    "EMPV": 2,
+                    "EDUV": 2,
+                    "LAV": 1,
+                    "CCRV": 1,
+                    "GDC": 1
+                }
+            }
+        }
     }
 }
