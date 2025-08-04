@@ -52330,16 +52330,27 @@
                     "verification_types_count": {
                         "AV": 1
                     }
+                },
+                {
+                    "process_id": "689051cb50b7a6ad5fe5daa0",
+                    "total_individuals": 4,
+                    "successful_onboardings": 4,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "PAV": 4
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 11,
-                "successful_onboardings": 10,
+                "total_individuals": 15,
+                "successful_onboardings": 14,
                 "failed_onboardings": 0,
                 "discarded_candidates": 1,
-                "verifications_initiated": 22,
+                "verifications_initiated": 26,
                 "verification_types_count": {
-                    "PAV": 4,
+                    "PAV": 8,
                     "CCRV": 4,
                     "EDUV": 4,
                     "EMPV": 4,
