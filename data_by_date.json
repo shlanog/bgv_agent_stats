@@ -52101,21 +52101,33 @@
                     "verification_types_count": {
                         "EDUV": 1
                     }
+                },
+                {
+                    "process_id": "6890863b50b7a6ad5fe5dc08",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "PAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 21,
-                "successful_onboardings": 21,
+                "total_individuals": 22,
+                "successful_onboardings": 22,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 78,
+                "verifications_initiated": 80,
                 "verification_types_count": {
                     "AV": 8,
                     "EMPV": 9,
                     "EDUV": 9,
                     "LAV": 13,
-                    "CCRV": 15,
-                    "PAV": 6,
+                    "CCRV": 16,
+                    "PAV": 7,
                     "PANV": 9,
                     "PVLF": 5,
                     "CC": 2,
