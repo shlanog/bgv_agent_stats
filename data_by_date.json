@@ -52849,23 +52849,36 @@
                         "PANV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "6890a930c5129e0c064f59fb",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "CCRV": 1,
+                        "PANV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 52,
-                "successful_onboardings": 51,
+                "total_individuals": 53,
+                "successful_onboardings": 52,
                 "failed_onboardings": 1,
                 "discarded_candidates": 0,
-                "verifications_initiated": 108,
+                "verifications_initiated": 111,
                 "verification_types_count": {
                     "EDUV": 4,
                     "PAV": 41,
-                    "CCRV": 51,
+                    "CCRV": 52,
                     "EMPV": 1,
                     "LADV": 1,
                     "PADV": 2,
-                    "AV": 5,
-                    "PANV": 3
+                    "AV": 6,
+                    "PANV": 4
                 }
             }
         },
