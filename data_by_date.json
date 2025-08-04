@@ -52800,19 +52800,33 @@
                         "PAV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68907921c5129e0c064f57c6",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 5,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "PAV": 1,
+                        "EDUV": 1,
+                        "EMPV": 2
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 24,
-                "successful_onboardings": 23,
+                "total_individuals": 25,
+                "successful_onboardings": 24,
                 "failed_onboardings": 0,
                 "discarded_candidates": 1,
-                "verifications_initiated": 53,
+                "verifications_initiated": 58,
                 "verification_types_count": {
-                    "PAV": 15,
-                    "CCRV": 9,
-                    "EDUV": 9,
-                    "EMPV": 14,
+                    "PAV": 16,
+                    "CCRV": 10,
+                    "EDUV": 10,
+                    "EMPV": 16,
                     "AV": 6
                 }
             }
