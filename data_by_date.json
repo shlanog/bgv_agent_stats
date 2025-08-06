@@ -57487,19 +57487,34 @@
                     "verification_types_count": {
                         "GDC": 1
                     }
+                },
+                {
+                    "process_id": "689307d250b7a6ad5fe5e589",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "DLV": 1,
+                        "CCRV": 1,
+                        "LADV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 2,
-                "successful_onboardings": 2,
+                "total_individuals": 3,
+                "successful_onboardings": 3,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 4,
+                "verifications_initiated": 7,
                 "verification_types_count": {
-                    "CCRV": 1,
+                    "CCRV": 2,
                     "EDUV": 1,
                     "EMPV": 1,
-                    "GDC": 1
+                    "GDC": 1,
+                    "DLV": 1,
+                    "LADV": 1
                 }
             }
         },
