@@ -58804,18 +58804,29 @@
                     "verification_types_count": {
                         "EMPV": 1
                     }
+                },
+                {
+                    "process_id": "68937543df7637d776da8a5d",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "EMPV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 23,
-                "successful_onboardings": 23,
+                "total_individuals": 24,
+                "successful_onboardings": 24,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 66,
+                "verifications_initiated": 67,
                 "verification_types_count": {
                     "CCRV": 21,
                     "EDUV": 15,
-                    "EMPV": 12,
+                    "EMPV": 13,
                     "GDC": 1,
                     "DLV": 1,
                     "LADV": 1,
@@ -59070,18 +59081,30 @@
                         "EDUV": 1,
                         "EMPV": 2
                     }
+                },
+                {
+                    "process_id": "6893748b6fdb91eb0e9bedaf",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "PAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 20,
-                "successful_onboardings": 20,
+                "total_individuals": 21,
+                "successful_onboardings": 21,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 80,
+                "verifications_initiated": 82,
                 "verification_types_count": {
                     "AV": 14,
-                    "CCRV": 14,
-                    "PAV": 14,
+                    "CCRV": 15,
+                    "PAV": 15,
                     "EDUV": 14,
                     "EMPV": 14,
                     "PVLF": 5,
@@ -59188,22 +59211,36 @@
                         "EDUV": 1,
                         "EMPV": 2
                     }
+                },
+                {
+                    "process_id": "689373a66fdb91eb0e9beda3",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 5,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "EMPV": 2,
+                        "EDUV": 1,
+                        "PAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 7,
-                "successful_onboardings": 7,
+                "total_individuals": 8,
+                "successful_onboardings": 8,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 34,
+                "verifications_initiated": 39,
                 "verification_types_count": {
                     "AV": 2,
-                    "CCRV": 6,
+                    "CCRV": 7,
                     "LAV": 6,
                     "PVLF": 2,
-                    "EDUV": 6,
-                    "EMPV": 11,
-                    "PAV": 1
+                    "EDUV": 7,
+                    "EMPV": 13,
+                    "PAV": 2
                 }
             }
         },
