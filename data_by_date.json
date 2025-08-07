@@ -61067,18 +61067,31 @@
                     "verification_types_count": {
                         "GDC": 1
                     }
+                },
+                {
+                    "process_id": "689465436bbd2c64102f721f",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "EDUV": 1,
+                        "EMPV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 8,
-                "successful_onboardings": 8,
+                "total_individuals": 9,
+                "successful_onboardings": 9,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 18,
+                "verifications_initiated": 21,
                 "verification_types_count": {
-                    "EDUV": 6,
-                    "EMPV": 6,
-                    "CCRV": 5,
+                    "EDUV": 7,
+                    "EMPV": 7,
+                    "CCRV": 6,
                     "GDC": 1
                 }
             }
