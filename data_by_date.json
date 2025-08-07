@@ -60240,19 +60240,32 @@
                         "CCRV": 1,
                         "PVLF": 1
                     }
+                },
+                {
+                    "process_id": "689479456bbd2c64102f7360",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "CCRV": 1,
+                        "PVLF": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 26,
-                "successful_onboardings": 26,
+                "total_individuals": 27,
+                "successful_onboardings": 27,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 96,
+                "verifications_initiated": 99,
                 "verification_types_count": {
-                    "CCRV": 26,
+                    "CCRV": 27,
                     "LADV": 4,
-                    "AV": 19,
-                    "PVLF": 9,
+                    "AV": 20,
+                    "PVLF": 10,
                     "EDUV": 14,
                     "EMPV": 8,
                     "PANV": 7,
