@@ -62713,6 +62713,35 @@
                     "LAV": 1
                 }
             }
+        },
+        "1081989": {
+            "processes": [
+                {
+                    "process_id": "68956ef93d81a397ba0a3850",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "PAV": 1,
+                        "EMPV": 2
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 4,
+                "verification_types_count": {
+                    "CCRV": 1,
+                    "PAV": 1,
+                    "EMPV": 2
+                }
+            }
         }
     }
 }
