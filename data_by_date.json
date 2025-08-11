@@ -67134,21 +67134,33 @@
                         "PAV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "6899b3eb2a969b02fe0a5004",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "PAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 6,
-                "successful_onboardings": 6,
+                "total_individuals": 7,
+                "successful_onboardings": 7,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 11,
+                "verifications_initiated": 13,
                 "verification_types_count": {
                     "AV": 1,
-                    "CCRV": 4,
+                    "CCRV": 5,
                     "LAPV": 1,
                     "EDUV": 1,
                     "EMPV": 1,
-                    "PAV": 2,
+                    "PAV": 3,
                     "EHC": 1
                 }
             }
