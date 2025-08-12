@@ -68999,16 +68999,27 @@
                     "verification_types_count": {
                         "PAV": 2
                     }
+                },
+                {
+                    "process_id": "689af367a97d7c4a80ddbe04",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "PAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 29,
-                "successful_onboardings": 29,
+                "total_individuals": 30,
+                "successful_onboardings": 30,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 65,
+                "verifications_initiated": 66,
                 "verification_types_count": {
-                    "PAV": 20,
+                    "PAV": 21,
                     "CCRV": 16,
                     "EDUV": 10,
                     "EMPV": 3,
