@@ -70949,6 +70949,43 @@
                     "LAV": 1
                 }
             }
+        },
+        "591950": {
+            "processes": [
+                {
+                    "process_id": "689c0b0068cf3cd8d579ab91",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 8,
+                    "verification_types_count": {
+                        "PANV": 1,
+                        "CCRV": 1,
+                        "GDC": 1,
+                        "LAV": 1,
+                        "EDUV": 1,
+                        "EMPV": 2,
+                        "EHC": 1
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 8,
+                "verification_types_count": {
+                    "PANV": 1,
+                    "CCRV": 1,
+                    "GDC": 1,
+                    "LAV": 1,
+                    "EDUV": 1,
+                    "EMPV": 2,
+                    "EHC": 1
+                }
+            }
         }
     }
 }
