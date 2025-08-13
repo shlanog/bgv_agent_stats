@@ -71788,6 +71788,31 @@
                     "CC": 1
                 }
             }
+        },
+        "842566": {
+            "processes": [
+                {
+                    "process_id": "689c33c8d3b5ad5aa0f91be2",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "CCRV": 1
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 1,
+                "verification_types_count": {
+                    "CCRV": 1
+                }
+            }
         }
     }
 }
