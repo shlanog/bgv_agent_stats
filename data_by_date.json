@@ -76275,16 +76275,27 @@
                         "GDC": 1,
                         "PANV": 1
                     }
+                },
+                {
+                    "process_id": "689e0076107e8bd36119849b",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "LAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 23,
-                "successful_onboardings": 22,
+                "total_individuals": 24,
+                "successful_onboardings": 23,
                 "failed_onboardings": 1,
                 "discarded_candidates": 0,
-                "verifications_initiated": 67,
+                "verifications_initiated": 68,
                 "verification_types_count": {
-                    "LAV": 6,
+                    "LAV": 7,
                     "LAPV": 1,
                     "CCRV": 18,
                     "EDUV": 4,
