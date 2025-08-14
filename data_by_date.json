@@ -76075,26 +76075,52 @@
                         "CCRV": 1,
                         "LADV": 1
                     }
+                },
+                {
+                    "process_id": "689ddeb44b3125ecfb2f9f77",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "DLV": 1,
+                        "CCRV": 1,
+                        "LADV": 1
+                    }
+                },
+                {
+                    "process_id": "689ddf6255adbabda91da228",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "DLV": 1,
+                        "CCRV": 1,
+                        "LADV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 18,
-                "successful_onboardings": 17,
+                "total_individuals": 20,
+                "successful_onboardings": 19,
                 "failed_onboardings": 1,
                 "discarded_candidates": 0,
-                "verifications_initiated": 53,
+                "verifications_initiated": 59,
                 "verification_types_count": {
                     "LAV": 6,
                     "LAPV": 1,
-                    "CCRV": 14,
+                    "CCRV": 16,
                     "EDUV": 4,
                     "AV": 4,
                     "GDC": 4,
                     "PANV": 2,
                     "CC": 2,
-                    "LADV": 6,
+                    "LADV": 8,
                     "EHC": 3,
-                    "DLV": 5,
+                    "DLV": 7,
                     "EMPV": 2
                 }
             }
