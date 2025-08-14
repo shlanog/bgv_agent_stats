@@ -74828,16 +74828,32 @@
                     "discarded_candidates": 0,
                     "verifications_initiated": 0,
                     "verification_types_count": {}
+                },
+                {
+                    "process_id": "689d959873e02fe3a62fff9f",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "LAPV": 1,
+                        "CCRV": 1,
+                        "EDUV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 3,
-                "successful_onboardings": 2,
+                "total_individuals": 4,
+                "successful_onboardings": 3,
                 "failed_onboardings": 1,
                 "discarded_candidates": 0,
-                "verifications_initiated": 2,
+                "verifications_initiated": 5,
                 "verification_types_count": {
-                    "LAV": 2
+                    "LAV": 2,
+                    "LAPV": 1,
+                    "CCRV": 1,
+                    "EDUV": 1
                 }
             }
         },
