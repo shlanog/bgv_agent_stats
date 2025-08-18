@@ -77182,16 +77182,34 @@
                     "verification_types_count": {
                         "PAV": 1
                     }
+                },
+                {
+                    "process_id": "68a2ca97f36461fa28b27a0b",
+                    "total_individuals": 3,
+                    "successful_onboardings": 3,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 12,
+                    "verification_types_count": {
+                        "LAV": 3,
+                        "GDC": 3,
+                        "EDUV": 3,
+                        "EMPV": 3
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 6,
-                "successful_onboardings": 4,
+                "total_individuals": 9,
+                "successful_onboardings": 7,
                 "failed_onboardings": 0,
                 "discarded_candidates": 2,
-                "verifications_initiated": 4,
+                "verifications_initiated": 16,
                 "verification_types_count": {
-                    "PAV": 4
+                    "PAV": 4,
+                    "LAV": 3,
+                    "GDC": 3,
+                    "EDUV": 3,
+                    "EMPV": 3
                 }
             }
         },
