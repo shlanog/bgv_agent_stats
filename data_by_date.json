@@ -77034,16 +77034,27 @@
                     "verification_types_count": {
                         "PAV": 1
                     }
+                },
+                {
+                    "process_id": "68a2c40a8557c620987e9eab",
+                    "total_individuals": 2,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "PAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 2,
-                "successful_onboardings": 1,
+                "total_individuals": 4,
+                "successful_onboardings": 2,
                 "failed_onboardings": 0,
-                "discarded_candidates": 1,
-                "verifications_initiated": 1,
+                "discarded_candidates": 2,
+                "verifications_initiated": 2,
                 "verification_types_count": {
-                    "PAV": 1
+                    "PAV": 2
                 }
             }
         }
