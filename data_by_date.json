@@ -78412,17 +78412,31 @@
                         "PAV": 7,
                         "EMPV": 7
                     }
+                },
+                {
+                    "process_id": "68a3ed0a090cdbedd738b6d2",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "EDUV": 1,
+                        "EMPV": 1,
+                        "PAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 7,
-                "successful_onboardings": 7,
+                "total_individuals": 8,
+                "successful_onboardings": 8,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 14,
+                "verifications_initiated": 17,
                 "verification_types_count": {
-                    "PAV": 7,
-                    "EMPV": 7
+                    "PAV": 8,
+                    "EMPV": 8,
+                    "EDUV": 1
                 }
             }
         }
