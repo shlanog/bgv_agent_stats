@@ -80721,19 +80721,31 @@
                         "DLV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68a477775955c7b337a2db8c",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "DLV": 1,
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 22,
-                "successful_onboardings": 22,
+                "total_individuals": 23,
+                "successful_onboardings": 23,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 74,
+                "verifications_initiated": 76,
                 "verification_types_count": {
                     "AV": 11,
                     "PANV": 3,
-                    "DLV": 7,
-                    "CCRV": 20,
+                    "DLV": 8,
+                    "CCRV": 21,
                     "LAV": 5,
                     "PAV": 3,
                     "EDUV": 5,
