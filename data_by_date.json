@@ -81349,18 +81349,33 @@
                     "verification_types_count": {
                         "CCRV": 4
                     }
+                },
+                {
+                    "process_id": "68a5655126e2e2db3de677e9",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "LADV": 1,
+                        "EMPV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 18,
-                "successful_onboardings": 18,
+                "total_individuals": 19,
+                "successful_onboardings": 19,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 46,
+                "verifications_initiated": 49,
                 "verification_types_count": {
                     "AV": 14,
                     "PANV": 14,
-                    "CCRV": 18
+                    "CCRV": 19,
+                    "LADV": 1,
+                    "EMPV": 1
                 }
             }
         },
