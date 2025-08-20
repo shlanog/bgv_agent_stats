@@ -81251,17 +81251,32 @@
                         "CCRV": 1,
                         "LADV": 1
                     }
+                },
+                {
+                    "process_id": "68a54c7d3dd1ef0455a684c5",
+                    "total_individuals": 4,
+                    "successful_onboardings": 4,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 12,
+                    "verification_types_count": {
+                        "AV": 4,
+                        "PAPV": 4,
+                        "CCRV": 4
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 1,
-                "successful_onboardings": 1,
+                "total_individuals": 5,
+                "successful_onboardings": 5,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 2,
+                "verifications_initiated": 14,
                 "verification_types_count": {
-                    "CCRV": 1,
-                    "LADV": 1
+                    "CCRV": 5,
+                    "LADV": 1,
+                    "AV": 4,
+                    "PAPV": 4
                 }
             }
         },
