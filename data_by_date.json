@@ -81235,24 +81235,41 @@
                         "EMPV": 2,
                         "EHC": 1
                     }
+                },
+                {
+                    "process_id": "68a551e37db4394ecdbfc815",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 8,
+                    "verification_types_count": {
+                        "PANV": 1,
+                        "CCRV": 1,
+                        "GDC": 1,
+                        "LAV": 1,
+                        "EDUV": 1,
+                        "EMPV": 2,
+                        "EHC": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 3,
-                "successful_onboardings": 3,
+                "total_individuals": 4,
+                "successful_onboardings": 4,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 21,
+                "verifications_initiated": 29,
                 "verification_types_count": {
                     "AV": 1,
-                    "PANV": 3,
-                    "CCRV": 3,
-                    "LAV": 2,
-                    "EDUV": 3,
-                    "EMPV": 5,
-                    "GDC": 2,
+                    "PANV": 4,
+                    "CCRV": 4,
+                    "LAV": 3,
+                    "EDUV": 4,
+                    "EMPV": 7,
+                    "GDC": 3,
                     "LAPV": 1,
-                    "EHC": 1
+                    "EHC": 2
                 }
             }
         },
@@ -81342,6 +81359,51 @@
                         "EDUV": 1,
                         "EMPV": 1
                     }
+                },
+                {
+                    "process_id": "68a5510c7db4394ecdbfc801",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 5,
+                    "verification_types_count": {
+                        "PANV": 1,
+                        "CCRV": 1,
+                        "LAV": 1,
+                        "EDUV": 1,
+                        "EMPV": 1
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 2,
+                "successful_onboardings": 2,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 9,
+                "verification_types_count": {
+                    "CCRV": 2,
+                    "PAV": 1,
+                    "EDUV": 2,
+                    "EMPV": 2,
+                    "PANV": 1,
+                    "LAV": 1
+                }
+            }
+        },
+        "514833": {
+            "processes": [
+                {
+                    "process_id": "68a552a53dd1ef0455a684e5",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "PAV": 1
+                    }
                 }
             ],
             "summary": {
@@ -81349,12 +81411,9 @@
                 "successful_onboardings": 1,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 4,
+                "verifications_initiated": 1,
                 "verification_types_count": {
-                    "CCRV": 1,
-                    "PAV": 1,
-                    "EDUV": 1,
-                    "EMPV": 1
+                    "PAV": 1
                 }
             }
         }
