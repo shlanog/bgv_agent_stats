@@ -21,7 +21,9 @@ USER_ID_MAP = {
     "905037": "Diwakar Lohia",
     "1045453": "Tarun Chauniyal",
     "842566": "Ashfaq Alam",
-    "710200": "Shivam Kumar"
+    "710200": "Shivam Kumar",
+    "358250": "Sonu Kumar",
+    "605016": "Mohammad Sameen"
 
 }
 
