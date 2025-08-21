@@ -85052,24 +85052,51 @@
                         "CCRV": 1,
                         "LAV": 1
                     }
+                },
+                {
+                    "process_id": "68a6cf7770c54efa3df62517",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "CCRV": 1,
+                        "LAV": 1
+                    }
+                },
+                {
+                    "process_id": "68a6d017c419a7fa35e32748",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "PANV": 1,
+                        "CCRV": 1,
+                        "LAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 19,
-                "successful_onboardings": 19,
+                "total_individuals": 21,
+                "successful_onboardings": 21,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 64,
+                "verifications_initiated": 71,
                 "verification_types_count": {
-                    "CCRV": 19,
+                    "CCRV": 21,
                     "PADV": 5,
                     "EDUV": 13,
                     "GDC": 2,
                     "PAV": 9,
                     "EMPV": 6,
-                    "AV": 4,
-                    "PANV": 2,
-                    "LAV": 2,
+                    "AV": 6,
+                    "PANV": 3,
+                    "LAV": 4,
                     "DLV": 1,
                     "PVLF": 1
                 }
