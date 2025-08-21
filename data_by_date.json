@@ -86128,21 +86128,33 @@
                         "EMPV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68a6e7280da592a41e217a9b",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "EREF": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 16,
-                "successful_onboardings": 16,
+                "total_individuals": 17,
+                "successful_onboardings": 17,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 57,
+                "verifications_initiated": 58,
                 "verification_types_count": {
                     "AV": 2,
                     "EDUV": 11,
                     "CCRV": 16,
                     "LADV": 2,
                     "PAV": 13,
-                    "EMPV": 13
+                    "EMPV": 13,
+                    "EREF": 1
                 }
             }
         },
