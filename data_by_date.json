@@ -84931,21 +84931,32 @@
                     "verification_types_count": {
                         "LAV": 1
                     }
+                },
+                {
+                    "process_id": "68a6bb73b4ec98df895caee5",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "PAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 14,
-                "successful_onboardings": 14,
+                "total_individuals": 15,
+                "successful_onboardings": 15,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 44,
+                "verifications_initiated": 45,
                 "verification_types_count": {
                     "EMPV": 10,
                     "EDUV": 8,
                     "CCRV": 9,
                     "AV": 3,
                     "GDC": 1,
-                    "PAV": 8,
+                    "PAV": 9,
                     "PANV": 2,
                     "LADV": 1,
                     "LAV": 2
