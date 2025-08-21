@@ -86792,16 +86792,27 @@
                     "verification_types_count": {
                         "PAV": 1
                     }
+                },
+                {
+                    "process_id": "68a70e831767b5236c5e0e71",
+                    "total_individuals": 10,
+                    "successful_onboardings": 10,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 10,
+                    "verification_types_count": {
+                        "CCRV": 10
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 48,
-                "successful_onboardings": 47,
+                "total_individuals": 58,
+                "successful_onboardings": 57,
                 "failed_onboardings": 0,
                 "discarded_candidates": 1,
-                "verifications_initiated": 187,
+                "verifications_initiated": 197,
                 "verification_types_count": {
-                    "CCRV": 45,
+                    "CCRV": 55,
                     "EDUV": 17,
                     "EMPV": 20,
                     "AV": 26,
