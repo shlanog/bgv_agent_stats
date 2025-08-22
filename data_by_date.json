@@ -90103,19 +90103,31 @@
                         "PAV": 1,
                         "EDUV": 1
                     }
+                },
+                {
+                    "process_id": "68a877d09af2de4f4eac4409",
+                    "total_individuals": 2,
+                    "successful_onboardings": 2,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "AV": 2,
+                        "CCRV": 2
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 28,
-                "successful_onboardings": 28,
+                "total_individuals": 30,
+                "successful_onboardings": 30,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 102,
+                "verifications_initiated": 106,
                 "verification_types_count": {
-                    "AV": 17,
+                    "AV": 19,
                     "PANV": 8,
                     "DLV": 3,
-                    "CCRV": 26,
+                    "CCRV": 28,
                     "LAV": 9,
                     "PAV": 6,
                     "PVLF": 3,
