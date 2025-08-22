@@ -88248,20 +88248,48 @@
                         "LAV": 1,
                         "EMPV": 1
                     }
+                },
+                {
+                    "process_id": "68a81e4f63cd3ca854555d82",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "PANV": 1,
+                        "CCRV": 1,
+                        "LAV": 1
+                    }
+                },
+                {
+                    "process_id": "68a81f0bba39b5c46cf45686",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "PANV": 1,
+                        "CCRV": 1,
+                        "LAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 21,
-                "successful_onboardings": 21,
+                "total_individuals": 23,
+                "successful_onboardings": 23,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 73,
+                "verifications_initiated": 81,
                 "verification_types_count": {
-                    "AV": 10,
-                    "PANV": 6,
+                    "AV": 12,
+                    "PANV": 8,
                     "DLV": 2,
-                    "CCRV": 19,
-                    "LAV": 7,
+                    "CCRV": 21,
+                    "LAV": 9,
                     "PAV": 8,
                     "EDUV": 8,
                     "EMPV": 9,
