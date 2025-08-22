@@ -88283,20 +88283,31 @@
                     "verification_types_count": {
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68a80b43445f363fedca00a1",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 11,
-                "successful_onboardings": 11,
+                "total_individuals": 12,
+                "successful_onboardings": 12,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 35,
+                "verifications_initiated": 36,
                 "verification_types_count": {
                     "EDUV": 5,
                     "EMPV": 10,
                     "EHC": 5,
                     "AV": 3,
-                    "CCRV": 7,
+                    "CCRV": 8,
                     "LAV": 3,
                     "GDC": 1,
                     "PAV": 1
