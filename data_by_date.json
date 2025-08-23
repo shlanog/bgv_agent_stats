@@ -90952,16 +90952,27 @@
                     "verification_types_count": {
                         "PVLF": 4
                     }
+                },
+                {
+                    "process_id": "68a97477f20f39ce1729d409",
+                    "total_individuals": 3,
+                    "successful_onboardings": 3,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "CCRV": 3
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 19,
-                "successful_onboardings": 17,
+                "total_individuals": 22,
+                "successful_onboardings": 20,
                 "failed_onboardings": 0,
                 "discarded_candidates": 2,
-                "verifications_initiated": 53,
+                "verifications_initiated": 56,
                 "verification_types_count": {
-                    "CCRV": 13,
+                    "CCRV": 16,
                     "PAV": 11,
                     "EDUV": 9,
                     "EMPV": 12,
