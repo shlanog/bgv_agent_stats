@@ -90936,21 +90936,34 @@
                         "PAV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68a999b1600d963e59e1e998",
+                    "total_individuals": 8,
+                    "successful_onboardings": 7,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1,
+                    "verifications_initiated": 21,
+                    "verification_types_count": {
+                        "AV": 7,
+                        "PANV": 7,
+                        "CCRV": 7
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 15,
-                "successful_onboardings": 14,
+                "total_individuals": 23,
+                "successful_onboardings": 21,
                 "failed_onboardings": 0,
-                "discarded_candidates": 1,
-                "verifications_initiated": 65,
+                "discarded_candidates": 2,
+                "verifications_initiated": 86,
                 "verification_types_count": {
-                    "AV": 6,
+                    "AV": 13,
                     "EMPV": 12,
                     "EDUV": 8,
                     "PAV": 7,
-                    "CCRV": 14,
-                    "PANV": 5,
+                    "CCRV": 21,
+                    "PANV": 12,
                     "PVLF": 2,
                     "PAPV": 2,
                     "DLV": 3,
