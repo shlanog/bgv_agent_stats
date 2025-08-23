@@ -90620,19 +90620,33 @@
                         "EDUV": 1,
                         "EMPV": 1
                     }
+                },
+                {
+                    "process_id": "68a94fd8aa6e41628bddf877",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "PAV": 1,
+                        "EMPV": 1,
+                        "EDUV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 11,
-                "successful_onboardings": 11,
+                "total_individuals": 12,
+                "successful_onboardings": 12,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 56,
+                "verifications_initiated": 60,
                 "verification_types_count": {
-                    "CCRV": 11,
-                    "PAV": 4,
-                    "EDUV": 4,
-                    "EMPV": 2,
+                    "CCRV": 12,
+                    "PAV": 5,
+                    "EDUV": 5,
+                    "EMPV": 3,
                     "AV": 7,
                     "PANV": 7,
                     "DLV": 7,
