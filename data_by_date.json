@@ -91060,17 +91060,28 @@
                     "verification_types_count": {
                         "CCRV": 2
                     }
+                },
+                {
+                    "process_id": "68a98e0e600d963e59e1e961",
+                    "total_individuals": 2,
+                    "successful_onboardings": 2,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "PAV": 2
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 26,
-                "successful_onboardings": 24,
+                "total_individuals": 28,
+                "successful_onboardings": 26,
                 "failed_onboardings": 0,
                 "discarded_candidates": 2,
-                "verifications_initiated": 66,
+                "verifications_initiated": 68,
                 "verification_types_count": {
                     "CCRV": 20,
-                    "PAV": 13,
+                    "PAV": 15,
                     "EDUV": 11,
                     "EMPV": 14,
                     "PADV": 2,
