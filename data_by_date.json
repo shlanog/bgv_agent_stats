@@ -91322,21 +91322,35 @@
                         "CCRV": 1,
                         "LAV": 1
                     }
+                },
+                {
+                    "process_id": "68a995099da6ff07ad75767f",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 6,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "PAV": 1,
+                        "EDUV": 2,
+                        "EMPV": 2
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 17,
-                "successful_onboardings": 17,
+                "total_individuals": 18,
+                "successful_onboardings": 18,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 68,
+                "verifications_initiated": 74,
                 "verification_types_count": {
                     "AV": 9,
                     "PANV": 2,
-                    "CCRV": 17,
-                    "PAV": 10,
-                    "EDUV": 8,
-                    "EMPV": 15,
+                    "CCRV": 18,
+                    "PAV": 11,
+                    "EDUV": 10,
+                    "EMPV": 17,
                     "LAV": 7
                 }
             }
