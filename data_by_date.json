@@ -91469,22 +91469,37 @@
                         "CCRV": 1,
                         "LADV": 1
                     }
+                },
+                {
+                    "process_id": "68a9aca09da6ff07ad7576df",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 5,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "CCRV": 1,
+                        "LAV": 1,
+                        "EDUV": 1,
+                        "EMPV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 24,
-                "successful_onboardings": 24,
+                "total_individuals": 25,
+                "successful_onboardings": 25,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 91,
+                "verifications_initiated": 96,
                 "verification_types_count": {
-                    "AV": 12,
+                    "AV": 13,
                     "PANV": 2,
-                    "CCRV": 24,
+                    "CCRV": 25,
                     "PAV": 12,
-                    "EDUV": 12,
-                    "EMPV": 17,
-                    "LAV": 8,
+                    "EDUV": 13,
+                    "EMPV": 18,
+                    "LAV": 9,
                     "LAPV": 2,
                     "LADV": 2
                 }
