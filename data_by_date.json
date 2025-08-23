@@ -90607,20 +90607,38 @@
                         "PAV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68a93f3c2be6e8a1f0e8c1ad",
+                    "total_individuals": 3,
+                    "successful_onboardings": 2,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1,
+                    "verifications_initiated": 10,
+                    "verification_types_count": {
+                        "AV": 2,
+                        "PANV": 2,
+                        "CCRV": 2,
+                        "PVLF": 2,
+                        "PAPV": 2
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 1,
-                "successful_onboardings": 1,
+                "total_individuals": 4,
+                "successful_onboardings": 3,
                 "failed_onboardings": 0,
-                "discarded_candidates": 0,
-                "verifications_initiated": 5,
+                "discarded_candidates": 1,
+                "verifications_initiated": 15,
                 "verification_types_count": {
-                    "AV": 1,
+                    "AV": 3,
                     "EMPV": 1,
                     "EDUV": 1,
                     "PAV": 1,
-                    "CCRV": 1
+                    "CCRV": 3,
+                    "PANV": 2,
+                    "PVLF": 2,
+                    "PAPV": 2
                 }
             }
         }
