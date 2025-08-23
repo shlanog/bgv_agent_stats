@@ -90648,20 +90648,32 @@
                     "verification_types_count": {
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68a945892be6e8a1f0e8c1b5",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "EDUV": 1,
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 5,
-                "successful_onboardings": 4,
+                "total_individuals": 6,
+                "successful_onboardings": 5,
                 "failed_onboardings": 0,
                 "discarded_candidates": 1,
-                "verifications_initiated": 16,
+                "verifications_initiated": 18,
                 "verification_types_count": {
                     "AV": 3,
                     "EMPV": 1,
-                    "EDUV": 1,
+                    "EDUV": 2,
                     "PAV": 1,
-                    "CCRV": 4,
+                    "CCRV": 5,
                     "PANV": 2,
                     "PVLF": 2,
                     "PAPV": 2
