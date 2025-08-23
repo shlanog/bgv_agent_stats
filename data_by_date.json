@@ -91004,19 +91004,33 @@
                     "verification_types_count": {
                         "CCRV": 3
                     }
+                },
+                {
+                    "process_id": "68a9803f8e3eac2bf5e5813c",
+                    "total_individuals": 2,
+                    "successful_onboardings": 2,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 8,
+                    "verification_types_count": {
+                        "CCRV": 2,
+                        "PAV": 2,
+                        "EDUV": 2,
+                        "EMPV": 2
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 22,
-                "successful_onboardings": 20,
+                "total_individuals": 24,
+                "successful_onboardings": 22,
                 "failed_onboardings": 0,
                 "discarded_candidates": 2,
-                "verifications_initiated": 56,
+                "verifications_initiated": 64,
                 "verification_types_count": {
-                    "CCRV": 16,
-                    "PAV": 11,
-                    "EDUV": 9,
-                    "EMPV": 12,
+                    "CCRV": 18,
+                    "PAV": 13,
+                    "EDUV": 11,
+                    "EMPV": 14,
                     "PADV": 2,
                     "AV": 2,
                     "PVLF": 4
