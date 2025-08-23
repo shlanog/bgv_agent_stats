@@ -91457,24 +91457,36 @@
                         "CCRV": 1,
                         "LADV": 1
                     }
+                },
+                {
+                    "process_id": "68a9a973e6a99eb5cb00d117",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "LADV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 23,
-                "successful_onboardings": 23,
+                "total_individuals": 24,
+                "successful_onboardings": 24,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 89,
+                "verifications_initiated": 91,
                 "verification_types_count": {
                     "AV": 12,
                     "PANV": 2,
-                    "CCRV": 23,
+                    "CCRV": 24,
                     "PAV": 12,
                     "EDUV": 12,
                     "EMPV": 17,
                     "LAV": 8,
                     "LAPV": 2,
-                    "LADV": 1
+                    "LADV": 2
                 }
             }
         }
