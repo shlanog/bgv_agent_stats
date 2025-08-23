@@ -91378,22 +91378,35 @@
                         "PAV": 1,
                         "EDUV": 2
                     }
+                },
+                {
+                    "process_id": "68a9a2fbfd51ea6c34db4d23",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "CCRV": 1,
+                        "LAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 19,
-                "successful_onboardings": 19,
+                "total_individuals": 20,
+                "successful_onboardings": 20,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 78,
+                "verifications_initiated": 81,
                 "verification_types_count": {
-                    "AV": 9,
+                    "AV": 10,
                     "PANV": 2,
-                    "CCRV": 19,
+                    "CCRV": 20,
                     "PAV": 12,
                     "EDUV": 12,
                     "EMPV": 17,
-                    "LAV": 7
+                    "LAV": 8
                 }
             }
         }
