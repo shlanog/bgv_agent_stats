@@ -92516,22 +92516,35 @@
                         "PANV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68ac6d12a1d2a449410cacfa",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "PANV": 1,
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 43,
-                "successful_onboardings": 43,
+                "total_individuals": 44,
+                "successful_onboardings": 44,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 145,
+                "verifications_initiated": 148,
                 "verification_types_count": {
-                    "CCRV": 41,
+                    "CCRV": 42,
                     "LAV": 5,
                     "EDUV": 27,
                     "EMPV": 18,
                     "PAV": 24,
-                    "AV": 15,
-                    "PANV": 15
+                    "AV": 16,
+                    "PANV": 16
                 }
             }
         },
