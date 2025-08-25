@@ -92642,22 +92642,34 @@
                         "PAV": 1,
                         "EMPV": 1
                     }
+                },
+                {
+                    "process_id": "68ac44a6f80db414cdf24ec4",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "EMPV": 1,
+                        "PAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 32,
-                "successful_onboardings": 32,
+                "total_individuals": 33,
+                "successful_onboardings": 33,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 91,
+                "verifications_initiated": 93,
                 "verification_types_count": {
                     "PANV": 7,
                     "CCRV": 30,
                     "GDC": 1,
                     "LAV": 1,
                     "EDUV": 5,
-                    "PAV": 11,
-                    "EMPV": 11,
+                    "PAV": 12,
+                    "EMPV": 12,
                     "AV": 15,
                     "PVLF": 5,
                     "LADV": 3,
