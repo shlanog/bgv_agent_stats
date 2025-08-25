@@ -92271,20 +92271,33 @@
                         "EDUV": 1,
                         "EMPV": 2
                     }
+                },
+                {
+                    "process_id": "68ac4e7745e81eb8301c840a",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "EDUV": 1,
+                        "PAV": 1,
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 29,
-                "successful_onboardings": 29,
+                "total_individuals": 30,
+                "successful_onboardings": 30,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 102,
+                "verifications_initiated": 105,
                 "verification_types_count": {
-                    "CCRV": 27,
+                    "CCRV": 28,
                     "LAV": 4,
-                    "EDUV": 25,
+                    "EDUV": 26,
                     "EMPV": 17,
-                    "PAV": 23,
+                    "PAV": 24,
                     "AV": 3,
                     "PANV": 3
                 }
@@ -92745,17 +92758,28 @@
                     "verification_types_count": {
                         "EDUV": 1
                     }
+                },
+                {
+                    "process_id": "68ac4df7463f2cbbba261e4c",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 36,
-                "successful_onboardings": 36,
+                "total_individuals": 37,
+                "successful_onboardings": 37,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 99,
+                "verifications_initiated": 100,
                 "verification_types_count": {
                     "PANV": 8,
-                    "CCRV": 31,
+                    "CCRV": 32,
                     "GDC": 1,
                     "LAV": 1,
                     "EDUV": 7,
