@@ -92464,22 +92464,35 @@
                         "PANV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68ac653ea1d2a449410cace3",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "PANV": 1,
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 39,
-                "successful_onboardings": 39,
+                "total_individuals": 40,
+                "successful_onboardings": 40,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 133,
+                "verifications_initiated": 136,
                 "verification_types_count": {
-                    "CCRV": 37,
+                    "CCRV": 38,
                     "LAV": 5,
                     "EDUV": 27,
                     "EMPV": 18,
                     "PAV": 24,
-                    "AV": 11,
-                    "PANV": 11
+                    "AV": 12,
+                    "PANV": 12
                 }
             }
         },
