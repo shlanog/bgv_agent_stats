@@ -91760,20 +91760,33 @@
                     "verification_types_count": {
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68abfad99ab0f383851f075e",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "EDUV": 1,
+                        "PAV": 1,
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 7,
-                "successful_onboardings": 7,
+                "total_individuals": 8,
+                "successful_onboardings": 8,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 26,
+                "verifications_initiated": 29,
                 "verification_types_count": {
-                    "CCRV": 7,
+                    "CCRV": 8,
                     "LAV": 1,
-                    "EDUV": 5,
+                    "EDUV": 6,
                     "EMPV": 6,
-                    "PAV": 5,
+                    "PAV": 6,
                     "AV": 1,
                     "PANV": 1
                 }
