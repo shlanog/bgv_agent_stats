@@ -91646,22 +91646,36 @@
                     "verification_types_count": {
                         "CCRV": 11
                     }
+                },
+                {
+                    "process_id": "68abfce12361ae1630c27838",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "CCRV": 1,
+                        "PAV": 1,
+                        "EDUV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 28,
-                "successful_onboardings": 28,
+                "total_individuals": 29,
+                "successful_onboardings": 29,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 47,
+                "verifications_initiated": 51,
                 "verification_types_count": {
                     "LADV": 5,
-                    "CCRV": 22,
-                    "AV": 2,
+                    "CCRV": 23,
+                    "AV": 3,
                     "PAPV": 2,
                     "EMPV": 4,
-                    "EDUV": 3,
-                    "PAV": 9
+                    "EDUV": 4,
+                    "PAV": 10
                 }
             }
         },
