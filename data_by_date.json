@@ -92299,22 +92299,35 @@
                         "PAV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68ac2a29c7369200716cf60f",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "PAV": 1,
+                        "EMPV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 23,
-                "successful_onboardings": 23,
+                "total_individuals": 24,
+                "successful_onboardings": 24,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 69,
+                "verifications_initiated": 72,
                 "verification_types_count": {
                     "PANV": 5,
-                    "CCRV": 23,
+                    "CCRV": 24,
                     "GDC": 1,
                     "LAV": 1,
                     "EDUV": 4,
-                    "PAV": 9,
-                    "EMPV": 9,
+                    "PAV": 10,
+                    "EMPV": 10,
                     "AV": 11,
                     "PVLF": 5,
                     "LADV": 1
