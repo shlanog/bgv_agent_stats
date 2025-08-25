@@ -91549,6 +91549,35 @@
                     "CCRV": 5
                 }
             }
+        },
+        "514833": {
+            "processes": [
+                {
+                    "process_id": "68abda1ee6a99eb5cb00d164",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "LAV": 1,
+                        "EDUV": 1
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 3,
+                "verification_types_count": {
+                    "CCRV": 1,
+                    "LAV": 1,
+                    "EDUV": 1
+                }
+            }
         }
     }
 }
