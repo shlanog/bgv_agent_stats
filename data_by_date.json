@@ -91685,18 +91685,30 @@
                     "verification_types_count": {
                         "LAV": 1
                     }
+                },
+                {
+                    "process_id": "68ac03b23ff1b08a462f1173",
+                    "total_individuals": 2,
+                    "successful_onboardings": 2,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "AV": 2,
+                        "CCRV": 2
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 31,
-                "successful_onboardings": 31,
+                "total_individuals": 33,
+                "successful_onboardings": 33,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 56,
+                "verifications_initiated": 60,
                 "verification_types_count": {
                     "LADV": 5,
-                    "CCRV": 24,
-                    "AV": 4,
+                    "CCRV": 26,
+                    "AV": 6,
                     "PAPV": 2,
                     "EMPV": 4,
                     "EDUV": 5,
