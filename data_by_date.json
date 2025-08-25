@@ -91727,22 +91727,37 @@
                         "EDUV": 6,
                         "EMPV": 10
                     }
+                },
+                {
+                    "process_id": "68ac316a9dc6ae2c5ff2ac45",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 5,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "CCRV": 1,
+                        "PAV": 1,
+                        "EDUV": 1,
+                        "EMPV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 43,
-                "successful_onboardings": 43,
+                "total_individuals": 44,
+                "successful_onboardings": 44,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 112,
+                "verifications_initiated": 117,
                 "verification_types_count": {
                     "LADV": 9,
-                    "CCRV": 30,
-                    "AV": 16,
+                    "CCRV": 31,
+                    "AV": 17,
                     "PAPV": 2,
-                    "EMPV": 14,
-                    "EDUV": 11,
-                    "PAV": 11,
+                    "EMPV": 15,
+                    "EDUV": 12,
+                    "PAV": 12,
                     "LAV": 5,
                     "PANV": 4,
                     "DLV": 4,
