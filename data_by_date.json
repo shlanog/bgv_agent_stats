@@ -91536,17 +91536,32 @@
                         "LADV": 5,
                         "CCRV": 5
                     }
+                },
+                {
+                    "process_id": "68abdd1f0c9338671acea9cc",
+                    "total_individuals": 2,
+                    "successful_onboardings": 2,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 6,
+                    "verification_types_count": {
+                        "AV": 2,
+                        "CCRV": 2,
+                        "PAPV": 2
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 5,
-                "successful_onboardings": 5,
+                "total_individuals": 7,
+                "successful_onboardings": 7,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 10,
+                "verifications_initiated": 16,
                 "verification_types_count": {
                     "LADV": 5,
-                    "CCRV": 5
+                    "CCRV": 7,
+                    "AV": 2,
+                    "PAPV": 2
                 }
             }
         },
