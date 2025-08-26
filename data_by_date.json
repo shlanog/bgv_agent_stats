@@ -96219,12 +96219,21 @@
                     "verification_types_count": {
                         "EHC": 1
                     }
+                },
+                {
+                    "process_id": "68adb98538c358129085071b",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 1,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 0,
+                    "verification_types_count": {}
                 }
             ],
             "summary": {
-                "total_individuals": 28,
+                "total_individuals": 29,
                 "successful_onboardings": 26,
-                "failed_onboardings": 1,
+                "failed_onboardings": 2,
                 "discarded_candidates": 1,
                 "verifications_initiated": 90,
                 "verification_types_count": {
