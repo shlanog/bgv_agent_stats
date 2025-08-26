@@ -93719,16 +93719,27 @@
                     "verification_types_count": {
                         "EDUV": 1
                     }
+                },
+                {
+                    "process_id": "68ad2bfd1b86aed671f54255",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "EDUV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 1,
-                "successful_onboardings": 1,
+                "total_individuals": 2,
+                "successful_onboardings": 2,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 1,
+                "verifications_initiated": 2,
                 "verification_types_count": {
-                    "EDUV": 1
+                    "EDUV": 2
                 }
             }
         },
