@@ -93961,20 +93961,34 @@
                         "PAV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68ad40d5db2282263850ba05",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "EDUV": 1,
+                        "PAV": 1,
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 8,
-                "successful_onboardings": 8,
+                "total_individuals": 9,
+                "successful_onboardings": 9,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 36,
+                "verifications_initiated": 40,
                 "verification_types_count": {
-                    "EDUV": 8,
-                    "PAV": 8,
-                    "CCRV": 8,
+                    "EDUV": 9,
+                    "PAV": 9,
+                    "CCRV": 9,
                     "EMPV": 7,
-                    "AV": 5
+                    "AV": 6
                 }
             }
         },
