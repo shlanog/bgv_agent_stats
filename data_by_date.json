@@ -96346,19 +96346,33 @@
                         "CCRV": 2,
                         "LAV": 2
                     }
+                },
+                {
+                    "process_id": "68add3b56530c9fac9cef73a",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "PANV": 1,
+                        "CCRV": 1,
+                        "LAV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 39,
-                "successful_onboardings": 37,
+                "total_individuals": 40,
+                "successful_onboardings": 38,
                 "failed_onboardings": 1,
                 "discarded_candidates": 1,
-                "verifications_initiated": 121,
+                "verifications_initiated": 125,
                 "verification_types_count": {
-                    "AV": 17,
-                    "PANV": 8,
-                    "CCRV": 33,
-                    "LAV": 8,
+                    "AV": 18,
+                    "PANV": 9,
+                    "CCRV": 34,
+                    "LAV": 9,
                     "CC": 5,
                     "PAV": 6,
                     "EMPV": 15,
