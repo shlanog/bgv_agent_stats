@@ -94816,24 +94816,37 @@
                         "EDUV": 3,
                         "EMPV": 2
                     }
+                },
+                {
+                    "process_id": "68ade5a3bd16cc7dc8e2a6a8",
+                    "total_individuals": 2,
+                    "successful_onboardings": 2,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "CCRV": 2,
+                        "LAV": 2
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 34,
-                "successful_onboardings": 30,
+                "total_individuals": 36,
+                "successful_onboardings": 32,
                 "failed_onboardings": 1,
                 "discarded_candidates": 3,
-                "verifications_initiated": 75,
+                "verifications_initiated": 79,
                 "verification_types_count": {
                     "PAV": 27,
                     "EMPV": 15,
-                    "CCRV": 20,
+                    "CCRV": 22,
                     "LADV": 1,
                     "PADV": 2,
                     "EDUV": 4,
                     "AV": 4,
                     "PANV": 1,
-                    "DLV": 1
+                    "DLV": 1,
+                    "LAV": 2
                 }
             }
         },
