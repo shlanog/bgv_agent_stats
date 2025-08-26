@@ -93945,19 +93945,34 @@
                         "CCRV": 1,
                         "LAV": 1
                     }
+                },
+                {
+                    "process_id": "68ad34481b86aed671f542c7",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 3,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "PAV": 1,
+                        "EDUV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 3,
-                "successful_onboardings": 3,
+                "total_individuals": 4,
+                "successful_onboardings": 4,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 10,
+                "verifications_initiated": 13,
                 "verification_types_count": {
                     "AV": 3,
-                    "CCRV": 3,
+                    "CCRV": 4,
                     "LAV": 3,
-                    "PANV": 1
+                    "PANV": 1,
+                    "PAV": 1,
+                    "EDUV": 1
                 }
             }
         }
