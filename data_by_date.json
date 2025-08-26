@@ -93783,6 +93783,33 @@
                 }
             }
         },
+        "1045453": {
+            "processes": [
+                {
+                    "process_id": "68ad2a5a6b57957dc5bb9a9d",
+                    "total_individuals": 6,
+                    "successful_onboardings": 5,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 1,
+                    "verifications_initiated": 9,
+                    "verification_types_count": {
+                        "PAV": 5,
+                        "EMPV": 4
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 6,
+                "successful_onboardings": 5,
+                "failed_onboardings": 0,
+                "discarded_candidates": 1,
+                "verifications_initiated": 9,
+                "verification_types_count": {
+                    "PAV": 5,
+                    "EMPV": 4
+                }
+            }
+        },
         "1187116": {
             "processes": [
                 {
