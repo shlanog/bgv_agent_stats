@@ -97416,20 +97416,34 @@
                         "CCRV": 1,
                         "PAV": 1
                     }
+                },
+                {
+                    "process_id": "68aebe39a12a3cf31b03a043",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 5,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "PAV": 1,
+                        "EDUV": 1,
+                        "EMPV": 2
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 13,
-                "successful_onboardings": 13,
+                "total_individuals": 14,
+                "successful_onboardings": 14,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 51,
+                "verifications_initiated": 56,
                 "verification_types_count": {
                     "DLV": 1,
-                    "CCRV": 10,
-                    "PAV": 7,
-                    "EDUV": 7,
-                    "EMPV": 17,
+                    "CCRV": 11,
+                    "PAV": 8,
+                    "EDUV": 8,
+                    "EMPV": 19,
                     "EHC": 3,
                     "AV": 2,
                     "PANV": 2,
