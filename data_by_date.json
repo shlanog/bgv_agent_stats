@@ -99131,19 +99131,31 @@
                         "AV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68af13af533a0813d4f06216",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 32,
-                "successful_onboardings": 32,
+                "total_individuals": 33,
+                "successful_onboardings": 33,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 107,
+                "verifications_initiated": 109,
                 "verification_types_count": {
-                    "AV": 20,
+                    "AV": 21,
                     "CC": 1,
                     "PANV": 11,
-                    "CCRV": 29,
+                    "CCRV": 30,
                     "LAV": 6,
                     "PAV": 4,
                     "PVLF": 7,
