@@ -97252,6 +97252,39 @@
                     "EHC": 1
                 }
             }
+        },
+        "358250": {
+            "processes": [
+                {
+                    "process_id": "68aea9f486e5527893f68d2c",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 5,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "CC": 1,
+                        "PANV": 1,
+                        "CCRV": 1,
+                        "LAV": 1
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 5,
+                "verification_types_count": {
+                    "AV": 1,
+                    "CC": 1,
+                    "PANV": 1,
+                    "CCRV": 1,
+                    "LAV": 1
+                }
+            }
         }
     }
 }
