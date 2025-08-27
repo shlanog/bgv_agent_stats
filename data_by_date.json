@@ -97129,12 +97129,21 @@
                         "PANV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68aeb67446f8b404c72030b4",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 1,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 0,
+                    "verification_types_count": {}
                 }
             ],
             "summary": {
-                "total_individuals": 16,
+                "total_individuals": 17,
                 "successful_onboardings": 16,
-                "failed_onboardings": 0,
+                "failed_onboardings": 1,
                 "discarded_candidates": 0,
                 "verifications_initiated": 39,
                 "verification_types_count": {
