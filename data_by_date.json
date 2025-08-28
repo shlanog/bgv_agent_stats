@@ -101606,14 +101606,25 @@
                         "EDUV": 1,
                         "EMPV": 2
                     }
+                },
+                {
+                    "process_id": "68b09a3bbeed55d57d24ce79",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "EHC": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 53,
-                "successful_onboardings": 49,
+                "total_individuals": 54,
+                "successful_onboardings": 50,
                 "failed_onboardings": 0,
                 "discarded_candidates": 4,
-                "verifications_initiated": 108,
+                "verifications_initiated": 109,
                 "verification_types_count": {
                     "CCRV": 38,
                     "PAV": 18,
@@ -101625,7 +101636,7 @@
                     "LAPV": 2,
                     "EDUV": 5,
                     "GDC": 2,
-                    "EHC": 1
+                    "EHC": 2
                 }
             }
         },
