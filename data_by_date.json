@@ -99613,12 +99613,21 @@
                         "LAV": 1,
                         "PAV": 1
                     }
+                },
+                {
+                    "process_id": "68b0241b4d8b2bac3683b8f7",
+                    "total_individuals": 1,
+                    "successful_onboardings": 0,
+                    "failed_onboardings": 1,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 0,
+                    "verification_types_count": {}
                 }
             ],
             "summary": {
-                "total_individuals": 33,
+                "total_individuals": 34,
                 "successful_onboardings": 33,
-                "failed_onboardings": 0,
+                "failed_onboardings": 1,
                 "discarded_candidates": 0,
                 "verifications_initiated": 180,
                 "verification_types_count": {
