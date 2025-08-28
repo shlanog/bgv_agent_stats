@@ -99248,6 +99248,33 @@
                     "CCRV": 1
                 }
             }
+        },
+        "1081989": {
+            "processes": [
+                {
+                    "process_id": "68afcf4b37bd7560a5b7a268",
+                    "total_individuals": 2,
+                    "successful_onboardings": 2,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 4,
+                    "verification_types_count": {
+                        "PAV": 2,
+                        "CCRV": 2
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 2,
+                "successful_onboardings": 2,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 4,
+                "verification_types_count": {
+                    "PAV": 2,
+                    "CCRV": 2
+                }
+            }
         }
     }
 }
