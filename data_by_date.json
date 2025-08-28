@@ -99587,16 +99587,27 @@
                     "verification_types_count": {
                         "EMPV": 1
                     }
+                },
+                {
+                    "process_id": "68afe52243520c1278f39752",
+                    "total_individuals": 2,
+                    "successful_onboardings": 2,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 2,
+                    "verification_types_count": {
+                        "PAV": 2
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 14,
-                "successful_onboardings": 12,
+                "total_individuals": 16,
+                "successful_onboardings": 14,
                 "failed_onboardings": 0,
                 "discarded_candidates": 2,
-                "verifications_initiated": 21,
+                "verifications_initiated": 23,
                 "verification_types_count": {
-                    "PAV": 11,
+                    "PAV": 13,
                     "CCRV": 9,
                     "EMPV": 1
                 }
