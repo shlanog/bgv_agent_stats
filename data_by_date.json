@@ -99222,5 +99222,32 @@
                 }
             }
         }
+    },
+    "28/08/2025": {
+        "591950": {
+            "processes": [
+                {
+                    "process_id": "68afce2ae70ea7d0d6f6289a",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "CCRV": 1
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 1,
+                "verification_types_count": {
+                    "CCRV": 1
+                }
+            }
+        }
     }
 }
