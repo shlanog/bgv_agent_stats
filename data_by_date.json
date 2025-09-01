@@ -105831,19 +105831,33 @@
                         "EDUV": 1,
                         "EMPV": 6
                     }
+                },
+                {
+                    "process_id": "68b51d4a2e7c0e748fbd36b2",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 5,
+                    "verification_types_count": {
+                        "CCRV": 1,
+                        "PAV": 1,
+                        "EDUV": 1,
+                        "EMPV": 2
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 2,
-                "successful_onboardings": 2,
+                "total_individuals": 3,
+                "successful_onboardings": 3,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 15,
+                "verifications_initiated": 20,
                 "verification_types_count": {
-                    "CCRV": 2,
-                    "PAV": 1,
-                    "EDUV": 2,
-                    "EMPV": 9,
+                    "CCRV": 3,
+                    "PAV": 2,
+                    "EDUV": 3,
+                    "EMPV": 11,
                     "LAV": 1
                 }
             }
@@ -105890,19 +105904,30 @@
                         "PAV": 1,
                         "CCRV": 1
                     }
+                },
+                {
+                    "process_id": "68b51f64a7b3e42db72b73bc",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 1,
+                    "verification_types_count": {
+                        "CCRV": 1
+                    }
                 }
             ],
             "summary": {
-                "total_individuals": 3,
-                "successful_onboardings": 3,
+                "total_individuals": 4,
+                "successful_onboardings": 4,
                 "failed_onboardings": 0,
                 "discarded_candidates": 0,
-                "verifications_initiated": 11,
+                "verifications_initiated": 12,
                 "verification_types_count": {
                     "EDUV": 3,
                     "EMPV": 2,
                     "PAV": 3,
-                    "CCRV": 3
+                    "CCRV": 4
                 }
             }
         },
@@ -105947,6 +105972,43 @@
                     "EMPV": 2,
                     "CCRV": 2,
                     "LAV": 1
+                }
+            }
+        },
+        "591950": {
+            "processes": [
+                {
+                    "process_id": "68b51d92a7b3e42db72b73aa",
+                    "total_individuals": 1,
+                    "successful_onboardings": 1,
+                    "failed_onboardings": 0,
+                    "discarded_candidates": 0,
+                    "verifications_initiated": 7,
+                    "verification_types_count": {
+                        "AV": 1,
+                        "PANV": 1,
+                        "CCRV": 1,
+                        "GDC": 1,
+                        "EDUV": 1,
+                        "EMPV": 1,
+                        "CC": 1
+                    }
+                }
+            ],
+            "summary": {
+                "total_individuals": 1,
+                "successful_onboardings": 1,
+                "failed_onboardings": 0,
+                "discarded_candidates": 0,
+                "verifications_initiated": 7,
+                "verification_types_count": {
+                    "AV": 1,
+                    "PANV": 1,
+                    "CCRV": 1,
+                    "GDC": 1,
+                    "EDUV": 1,
+                    "EMPV": 1,
+                    "CC": 1
                 }
             }
         }
