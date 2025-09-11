@@ -374,10 +374,6 @@ def main():
                 )
             else:
                 st.write("No processes found for this user.")
-
-            # Excel download section
-            st.markdown("---")
-            st.markdown("### 📥 Export Data")
             
             col1, col2 = st.columns([1, 3])
             
