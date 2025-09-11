@@ -388,9 +388,9 @@ def main():
                          
                          # Direct download button
                          st.download_button(
-                             label="📊 Download Excel",
+                             label="Download Excel",
                              data=excel_buffer,
-                             file_name=f"verification_types_{selected_date.replace('/', '_')}.xlsx",
+                             file_name=f"new_initiation_portal_stats_{selected_date.replace('/', '_')}.xlsx",
                              mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                              help="Click to download the Excel file",
                              type="primary"
