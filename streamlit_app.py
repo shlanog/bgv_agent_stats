@@ -82,26 +82,22 @@ def create_excel_buffer(df):
     """Create an Excel file in memory and return the buffer"""
     buffer = io.BytesIO()
     
-    try:
-        # Try xlsxwriter first (more commonly available)
-        with pd.ExcelWriter(buffer, engine='xlsxwriter') as writer:
-            df.to_excel(writer, sheet_name='Verification_Types', index=False)
-            
-            # Auto-adjust column widths
-            workbook = writer.book
-            worksheet = writer.sheets['Verification_Types']
-            
-            for i, col in enumerate(df.columns):
-                # Calculate max width for each column
-                max_len = max(
-                    df[col].astype(str).map(len).max(),  # max length in column
-                    len(str(col))  # length of column name
-                ) + 2
-                worksheet.set_column(i, i, min(max_len, 50))
-                
-    except ImportError:
-        # Fallback to basic Excel without formatting
-        pass
+    with pd.ExcelWriter(buffer, engine='openpyxl') as writer:
+        df.to_excel(writer, sheet_name='Individual_Processes', index=False)
+        
+        # Auto-adjust column widths
+        worksheet = writer.sheets['Individual_Processes']
+        for column in worksheet.columns:
+            max_length = 0
+            column_letter = column[0].column_letter
+            for cell in column:
+                try:
+                    if len(str(cell.value)) > max_length:
+                        max_length = len(str(cell.value))
+                except:
+                    pass
+            adjusted_width = min(max_length + 2, 50)
+            worksheet.column_dimensions[column_letter].width = adjusted_width
     
     buffer.seek(0)
     return buffer
@@ -378,32 +374,37 @@ def main():
                 )
             else:
                 st.write("No processes found for this user.")
-                
+
+            # Excel download section
+            st.markdown("---")
+            st.markdown("### 📥 Export Data")
+            
             col1, col2 = st.columns([1, 3])
             
             with col1:
-                try:
-                    # Create DataFrame for Excel export
-                    excel_df = create_excel_dataframe(date_data, selected_date)
-                    
-                    if not excel_df.empty:
-                        # Create Excel buffer
-                        excel_buffer = create_excel_buffer(excel_df)
-                        
-                        # Direct download button
-                        st.download_button(
-                            label="📊 Download Excel",
-                            data=excel_buffer,
-                            file_name=f"verification_types_{selected_date.replace('/', '_')}.xlsx",
-                            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                            help="Click to download the Excel file",
-                            type="primary"
-                        )
-                    else:
-                        st.warning("No data available for Excel export.")
-                        
-                except Exception as e:
-                    st.error(f"Error creating Excel file: {str(e)}")
+                 try:
+                     # Create DataFrame for Excel export
+                     excel_df = create_excel_dataframe(date_data, selected_date)
+                     
+                     if not excel_df.empty:
+                         # Create Excel buffer
+                         excel_buffer = create_excel_buffer(excel_df)
+                         
+                         # Direct download button
+                         st.download_button(
+                             label="📊 Download Excel",
+                             data=excel_buffer,
+                             file_name=f"verification_types_{selected_date.replace('/', '_')}.xlsx",
+                             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                             help="Click to download the Excel file",
+                             type="primary"
+                         )
+                     else:
+                         st.warning("No data available for Excel export.")
+                         
+                 except Exception as e:
+                     st.error(f"Error creating Excel file: {str(e)}")
+
 
         
     
