@@ -2,6 +2,7 @@ import streamlit as st
 import json
 import pandas as pd
 from datetime import datetime
+import io
 
 # Set page config
 st.set_page_config(
@@ -42,6 +43,64 @@ def format_verification_types(verification_types_count):
     # Format as "TYPE:count, TYPE:count"
     formatted = ", ".join([f"{vtype}:{count}" for vtype, count in sorted_verifications])
     return formatted
+
+def get_all_verification_types(date_data):
+    """Extract all unique verification types from the data"""
+    verification_types = set()
+    for user_data in date_data.values():
+        for process in user_data['processes']:
+            verification_types.update(process.get('verification_types_count', {}).keys())
+    return sorted(list(verification_types))
+
+def create_excel_dataframe(date_data, selected_date):
+    """Create a DataFrame for Excel export with users as rows and verification types as columns"""
+    # Get all unique verification types
+    all_verification_types = get_all_verification_types(date_data)
+    
+    # Prepare data for DataFrame - just user summary with verification types
+    excel_data = []
+    
+    for user_id, user_data in date_data.items():
+        user_name = get_user_display_name(user_id)
+        
+        # Start with basic user info
+        row = {
+            'Date': selected_date,
+            'User': user_name
+        }
+        
+        # Add verification type columns using summary data
+        verification_counts = user_data['summary'].get('verification_types_count', {})
+        for vtype in all_verification_types:
+            row[vtype] = verification_counts.get(vtype, 0)
+        
+        excel_data.append(row)
+    
+    return pd.DataFrame(excel_data)
+
+def create_excel_buffer(df):
+    """Create an Excel file in memory and return the buffer"""
+    buffer = io.BytesIO()
+    
+    with pd.ExcelWriter(buffer, engine='openpyxl') as writer:
+        df.to_excel(writer, sheet_name='Individual_Processes', index=False)
+        
+        # Auto-adjust column widths
+        worksheet = writer.sheets['Individual_Processes']
+        for column in worksheet.columns:
+            max_length = 0
+            column_letter = column[0].column_letter
+            for cell in column:
+                try:
+                    if len(str(cell.value)) > max_length:
+                        max_length = len(str(cell.value))
+                except:
+                    pass
+            adjusted_width = min(max_length + 2, 50)
+            worksheet.column_dimensions[column_letter].width = adjusted_width
+    
+    buffer.seek(0)
+    return buffer
 
 # Load data and convert format if needed
 def load_data():
@@ -179,7 +238,7 @@ def main():
         
         # Display table
         df = pd.DataFrame(table_data)
-        st.dataframe(df, use_container_width=True)
+        st.dataframe(df, width='stretch')
         
         # Compact verification types breakdown
         st.markdown("#### 🔍 Verification Types by User")
@@ -266,6 +325,7 @@ def main():
                         st.markdown(verification_text, unsafe_allow_html=True)
         
         # User selector for detailed process view
+        st.markdown("---")
         st.markdown("### 🔍 Detailed Process Information")
         
         # Create a mapping for the selectbox (display name -> user_id)
@@ -303,7 +363,7 @@ def main():
                 process_df = pd.DataFrame(formatted_processes)
                 st.dataframe(
                     process_df, 
-                    use_container_width=True,
+                    width='stretch',
                     column_config={
                         "verification_types_count": st.column_config.TextColumn(
                             "Verification Types",
@@ -314,6 +374,35 @@ def main():
                 )
             else:
                 st.write("No processes found for this user.")
+                
+            col1, col2 = st.columns([1, 3])
+            
+            with col1:
+                if st.button("📊 Download Excel", type="primary", help="Download individual processes data as Excel file"):
+                    try:
+                        # Create DataFrame for Excel export
+                        excel_df = create_excel_dataframe(date_data, selected_date)
+                        
+                        if not excel_df.empty:
+                            # Create Excel buffer
+                            excel_buffer = create_excel_buffer(excel_df)
+                            
+                            # Create download button
+                            st.download_button(
+                                label="📥 Download Excel",
+                                data=excel_buffer,
+                                file_name=f"verification_types_{selected_date.replace('/', '_')}.xlsx",
+                                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                                help="Click to download the Excel file"
+                            )
+                            st.success(f"✅ Excel file prepared! Contains {len(excel_df)} users with verification types data.")
+                        else:
+                            st.warning("No data available for Excel export.")
+                            
+                    except Exception as e:
+                        st.error(f"Error creating Excel file: {str(e)}")
+
+        
     
     # Footer
     st.markdown("---")
