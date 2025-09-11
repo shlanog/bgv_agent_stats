@@ -101,7 +101,7 @@ def create_excel_buffer(df):
                 
     except ImportError:
         # Fallback to basic Excel without formatting
-        df.to_excel(buffer, sheet_name='Verification_Types', index=False, engine='openpyxl')
+        pass
     
     buffer.seek(0)
     return buffer
