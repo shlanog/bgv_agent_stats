@@ -44,6 +44,14 @@ def format_verification_types(verification_types_count):
     formatted = ", ".join([f"{vtype}:{count}" for vtype, count in sorted_verifications])
     return formatted
 
+# Fixed column order for verification types in Excel export
+# Any verification types not listed here will be appended after these, in alphabetical order
+FIXED_VERIFICATION_ORDER = [
+    "AV", "PANV", "DLV", "VIDV", "CCRV", "EDUV", "EMPV", "LAV", "PAV",
+    "LAPV", "PAPV", "LADV", "PADV", "PRC", "PCC", "PVLF", "CC", "GDC",
+    "BAV", "EREF", "EHC", "OFACC", "DRG", "PPV", "CVV", "XAV", "SMC"
+]
+
 def get_all_verification_types(date_data):
     """Extract all unique verification types from the data"""
     verification_types = set()
@@ -56,6 +64,11 @@ def create_excel_dataframe(date_data, selected_date):
     """Create a DataFrame for Excel export with users as rows and verification types as columns"""
     # Get all unique verification types
     all_verification_types = get_all_verification_types(date_data)
+
+    # Build ordered list: always include the fixed list (even if absent in data),
+    # then append any remaining unexpected types alphabetically
+    remaining = sorted([v for v in all_verification_types if v not in FIXED_VERIFICATION_ORDER])
+    ordered_verification_types = FIXED_VERIFICATION_ORDER + remaining
     
     # Prepare data for DataFrame - just user summary with verification types
     excel_data = []
@@ -71,12 +84,19 @@ def create_excel_dataframe(date_data, selected_date):
         
         # Add verification type columns using summary data
         verification_counts = user_data['summary'].get('verification_types_count', {})
-        for vtype in all_verification_types:
-            row[vtype] = verification_counts.get(vtype, 0)
+        for vtype in ordered_verification_types:
+            count = verification_counts.get(vtype, 0)
+            row[vtype] = count if count != 0 else 0
         
         excel_data.append(row)
     
-    return pd.DataFrame(excel_data)
+    # Create DataFrame and enforce column order
+    df = pd.DataFrame(excel_data)
+    desired_columns = ['Date', 'User'] + ordered_verification_types
+    # Ensure any accidental extra columns are preserved at the end (rare)
+    extra_columns = [c for c in df.columns if c not in desired_columns]
+    df = df.reindex(columns=desired_columns + extra_columns)
+    return df
 
 def create_excel_buffer(df):
     """Create an Excel file in memory and return the buffer"""
