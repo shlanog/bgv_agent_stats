@@ -179,8 +179,8 @@ def main():
     # Sidebar for date selection
     st.sidebar.header("📅 Select Date")
     
-    # Get all available dates and sort them
-    available_dates = sorted(data.keys(), key=lambda x: datetime.strptime(x, '%d/%m/%Y'))
+    # Get all available dates and sort them in descending order (latest first)
+    available_dates = sorted(data.keys(), key=lambda x: datetime.strptime(x, '%d/%m/%Y'), reverse=True)
     
     if not available_dates:
         st.error("No data available.")
@@ -190,7 +190,7 @@ def main():
     selected_date = st.sidebar.selectbox(
         "Choose a date:",
         available_dates,
-        index=len(available_dates)-1  # Default to most recent date
+        index=0  # Default to first date (which is now the most recent)
     )
     
     # Display data for selected date
