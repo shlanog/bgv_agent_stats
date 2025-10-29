@@ -24,7 +24,8 @@ USER_ID_MAP = {
     "842566": "Ashfaq Alam",
     "710200": "Shivam Kumar",
     "358250": "Sonu Kumar",
-    "605016": "Mohammad Sameen"
+    "605016": "Mohammad Sameen",
+    "600438": "Pankaj Katyura"
 
 }
 
