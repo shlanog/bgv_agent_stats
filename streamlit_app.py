@@ -169,8 +169,32 @@ def load_data():
         st.error("Data file 'data_by_date.json' not found. Please run the query script first.")
         return {}
 
+def load_monthly_data():
+    try:
+        with open('data_by_month.json', 'r') as f:
+            data = json.load(f)
+        return data
+    except FileNotFoundError:
+        st.error("Monthly data file 'data_by_month.json' not found. Please run the monthly query script first.")
+        return {}
+
 def main():
     
+    # Sidebar for view selection
+    st.sidebar.header("📊 View Selection")
+    
+    view_type = st.sidebar.radio(
+        "Choose view type:",
+        ["Daily Stats", "Monthly Stats"],
+        index=0
+    )
+    
+    if view_type == "Daily Stats":
+        display_daily_stats()
+    else:
+        display_monthly_stats()
+
+def display_daily_stats():
     # Load data
     data = load_data()
     
@@ -196,7 +220,7 @@ def main():
     
     # Display data for selected date
     if selected_date in data:
-        st.header(f"📈 Analytics for {selected_date}")
+        st.header(f"📈 Daily Analytics for {selected_date}")
         
         date_data = data[selected_date]
         
@@ -204,227 +228,270 @@ def main():
             st.warning("No data available for this date.")
             return
         
-        # Calculate overall totals for the date
-        total_users = len(date_data)
-        total_processes = sum(len(user_data['processes']) for user_data in date_data.values())
-        overall_individuals = sum(user_data['summary']['total_individuals'] for user_data in date_data.values())
-        overall_successful = sum(user_data['summary']['successful_onboardings'] for user_data in date_data.values())
-        overall_failed = sum(user_data['summary']['failed_onboardings'] for user_data in date_data.values())
-        overall_discarded = sum(user_data['summary']['discarded_candidates'] for user_data in date_data.values()) + overall_failed
-        overall_verifications_initiated = sum(user_data['summary']['verifications_initiated'] for user_data in date_data.values())
-        
-        # Display overall metrics in two rows for better responsiveness
-        # First row - main metrics
-        col1, col2, col3 = st.columns(3)
-        
-        with col1:
-            st.metric("👥 Total Users", total_users)    
-        
-        with col2:
-            st.metric("👤 Total Individuals", overall_individuals)
-        
-        with col3:
-            st.metric("🔍 Verifications Initiated", overall_verifications_initiated)
-        
-        # Second row - outcome metrics
-        col4, col5, col6 = st.columns(3)
-        
-        with col4:
-            st.metric("✅ Successful Onboardings", overall_successful)
-        
-        with col5:
-            st.metric("🗑️ Discarded Candidates", overall_discarded)
-        
-        st.markdown("---")
-        
-        # Single section with user summary and details
-        st.subheader("👥 User Summary")
-        
-        # Prepare data for table
-        table_data = []
-        for user_id, user_data in date_data.items():    
-            summary = user_data['summary']
+        display_stats_content(date_data, selected_date, "daily")
 
-            table_data.append({
-                'User': get_user_display_name(user_id),
-                'Processes': len(user_data['processes']),
-                'Total Individuals': summary['total_individuals'],
-                'Successful': summary['successful_onboardings'],
-                'Discarded': summary['discarded_candidates'] + summary['failed_onboardings'],
-                'Verifications Initiated': summary.get('verifications_initiated', 0)
-            })
+def display_monthly_stats():
+    # Load monthly data
+    data = load_monthly_data()
+    
+    if not data:
+        st.stop()
+    
+    # Sidebar for month selection
+    st.sidebar.header("📅 Select Month")
+    
+    # Get all available months and sort them in descending order (latest first)
+    available_months = sorted(data.keys(), key=lambda x: datetime.strptime(x, '%m/%Y'), reverse=True)
+    
+    if not available_months:
+        st.error("No monthly data available.")
+        return
+    
+    # Month selector
+    selected_month = st.sidebar.selectbox(
+        "Choose a month:",
+        available_months,
+        index=0  # Default to first month (which is now the most recent)
+    )
+    
+    # Display data for selected month
+    if selected_month in data:
+        st.header(f"📈 Monthly Analytics for {selected_month}")
         
-        # Sort by total individuals (descending)
-        table_data.sort(key=lambda x: x['Total Individuals'], reverse=True)
+        month_data = data[selected_month]
         
-        # Display table
-        df = pd.DataFrame(table_data)
-        st.dataframe(df, width='stretch')
+        if not month_data:
+            st.warning("No data available for this month.")
+            return
         
-        # Compact verification types breakdown
-        st.markdown("#### 🔍 Verification Types by User")
+        display_stats_content(month_data, selected_month, "monthly")
+
+def display_stats_content(period_data, selected_period, period_type):
+    """Common function to display stats content for both daily and monthly views"""
+    
+    # Calculate overall totals for the period
+    total_users = len(period_data)
+    total_processes = sum(len(user_data['processes']) for user_data in period_data.values())
+    overall_individuals = sum(user_data['summary']['total_individuals'] for user_data in period_data.values())
+    overall_successful = sum(user_data['summary']['successful_onboardings'] for user_data in period_data.values())
+    overall_failed = sum(user_data['summary']['failed_onboardings'] for user_data in period_data.values())
+    overall_discarded = sum(user_data['summary']['discarded_candidates'] for user_data in period_data.values()) + overall_failed
+    overall_verifications_initiated = sum(user_data['summary']['verifications_initiated'] for user_data in period_data.values())
+    
+    # Display overall metrics in two rows for better responsiveness
+    # First row - main metrics
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        st.metric("👥 Total Users", total_users)    
+    
+    with col2:
+        st.metric("👤 Total Individuals", overall_individuals)
+    
+    with col3:
+        st.metric("🔍 Verifications Initiated", overall_verifications_initiated)
+    
+    # Second row - outcome metrics
+    col4, col5, col6 = st.columns(3)
+    
+    with col4:
+        st.metric("✅ Successful Onboardings", overall_successful)
+    
+    with col5:
+        st.metric("🗑️ Discarded Candidates", overall_discarded)
+    
+    with col6:
+        if period_type == "monthly":
+            st.metric("📊 Total Processes", total_processes)
+    
+    st.markdown("---")
+    
+    # Single section with user summary and details
+    st.subheader("👥 User Summary")
+    
+    # Prepare data for table
+    table_data = []
+    for user_id, user_data in period_data.items():    
+        summary = user_data['summary']
+
+        table_data.append({
+            'User': get_user_display_name(user_id),
+            'Processes': len(user_data['processes']),
+            'Total Individuals': summary['total_individuals'],
+            'Successful': summary['successful_onboardings'],
+            'Discarded': summary['discarded_candidates'] + summary['failed_onboardings'],
+            'Verifications Initiated': summary.get('verifications_initiated', 0)
+        })
+    
+    # Sort by total individuals (descending)
+    table_data.sort(key=lambda x: x['Total Individuals'], reverse=True)
+    
+    # Display table
+    df = pd.DataFrame(table_data)
+    st.dataframe(df, width='stretch')
+    
+    # Compact verification types breakdown
+    st.markdown("#### 🔍 Verification Types by User")
+    
+    # Sort users by the same order as the table (by total individuals)
+    sorted_users = sorted(period_data.items(), key=lambda x: x[1]['summary']['total_individuals'], reverse=True)
+    
+    # Create compact verification display using Streamlit containers
+    with st.container():
+        st.markdown("""
+        <style>
+        .stContainer > div {
+            background: linear-gradient(135deg, rgba(28, 131, 225, 0.08), rgba(28, 131, 225, 0.02));
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid rgba(28, 131, 225, 0.1);
+        }
+        .verification-badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin: 2px;
+            display: inline-block;
+            font-size: 14px;
+        }
+        .total-badge {
+            background: rgba(28, 131, 225, 0.3);
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin: 2px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        </style>
+        """, unsafe_allow_html=True)
         
-        # Sort users by the same order as the table (by total individuals)
-        sorted_users = sorted(date_data.items(), key=lambda x: x[1]['summary']['total_individuals'], reverse=True)
+        # Calculate total verification types across all users
+        total_verification_types = {}
+        for user_id, user_data in sorted_users:
+            verification_types = user_data['summary'].get('verification_types_count', {})
+            for verification_type, count in verification_types.items():
+                total_verification_types[verification_type] = total_verification_types.get(verification_type, 0) + count
         
-        # Create compact verification display using Streamlit containers
-        with st.container():
-            st.markdown("""
-            <style>
-            .stContainer > div {
-                background: linear-gradient(135deg, rgba(28, 131, 225, 0.08), rgba(28, 131, 225, 0.02));
-                border-radius: 10px;
-                padding: 15px;
-                margin: 10px 0;
-                border: 1px solid rgba(28, 131, 225, 0.1);
-            }
-            .verification-badge {
-                background: rgba(255, 255, 255, 0.1);
-                padding: 4px 8px;
-                border-radius: 4px;
-                margin: 2px;
-                display: inline-block;
-                font-size: 14px;
-            }
-            .total-badge {
-                background: rgba(28, 131, 225, 0.3);
-                padding: 4px 8px;
-                border-radius: 4px;
-                margin: 2px;
-                display: inline-block;
-                font-size: 14px;
-                font-weight: bold;
-            }
-            </style>
-            """, unsafe_allow_html=True)
+        # Display total row first
+        if total_verification_types:
+            sorted_total_verifications = sorted(total_verification_types.items(), key=lambda x: -x[1])
             
-            # Calculate total verification types across all users
-            total_verification_types = {}
-            for user_id, user_data in sorted_users:
-                verification_types = user_data['summary'].get('verification_types_count', {})
-                for verification_type, count in verification_types.items():
-                    total_verification_types[verification_type] = total_verification_types.get(verification_type, 0) + count
+            col1, col2 = st.columns([1, 4])
             
-            # Display total row first
-            if total_verification_types:
-                sorted_total_verifications = sorted(total_verification_types.items(), key=lambda x: -x[1])
+            with col1:
+                st.markdown("**📊 Total:**")
+            
+            with col2:
+                total_text = ""
+                for vtype, count in sorted_total_verifications:
+                    total_text += f'<span class="total-badge">{vtype}: {count}</span> '
                 
+                st.markdown(total_text, unsafe_allow_html=True)
+            
+            # Add separator
+            st.markdown("---")
+        
+        for user_id, user_data in sorted_users:
+            user_name = get_user_display_name(user_id)
+            verification_types = user_data['summary'].get('verification_types_count', {})
+            
+            if verification_types:
+                sorted_verifications = sorted(verification_types.items(), key=lambda x: -x[1])
+                
+                # Create one row per user
                 col1, col2 = st.columns([1, 4])
                 
                 with col1:
-                    st.markdown("**📊 Total:**")
+                    st.markdown(f"**{user_name}:**")
                 
                 with col2:
-                    total_text = ""
-                    for vtype, count in sorted_total_verifications:
-                        total_text += f'<span class="total-badge">{vtype}: {count}</span> '
+                    # Create verification badges
+                    verification_text = ""
+                    for vtype, count in sorted_verifications:
+                        verification_text += f'<span class="verification-badge">{vtype}: {count}</span> '
                     
-                    st.markdown(total_text, unsafe_allow_html=True)
-                
-                # Add separator
-                st.markdown("---")
-            
-            for user_id, user_data in sorted_users:
-                user_name = get_user_display_name(user_id)
-                verification_types = user_data['summary'].get('verification_types_count', {})
-                
-                if verification_types:
-                    sorted_verifications = sorted(verification_types.items(), key=lambda x: -x[1])
-                    
-                    # Create one row per user
-                    col1, col2 = st.columns([1, 4])
-                    
-                    with col1:
-                        st.markdown(f"**{user_name}:**")
-                    
-                    with col2:
-                        # Create verification badges
-                        verification_text = ""
-                        for vtype, count in sorted_verifications:
-                            verification_text += f'<span class="verification-badge">{vtype}: {count}</span> '
-                        
-                        st.markdown(verification_text, unsafe_allow_html=True)
-        
-        # User selector for detailed process view
-        st.markdown("---")
-        st.markdown("### 🔍 Detailed Process Information")
-        
-        # Create a mapping for the selectbox (display name -> user_id)
-        user_display_options = {get_user_display_name(user_id): user_id for user_id in date_data.keys()}
-        
-        selected_user_display = st.selectbox(
-            "Select a user to view their individual processes:",
-            list(user_display_options.keys()),
-            key="user_selector"
-        )
-        
-        if selected_user_display:
-            selected_user_id = user_display_options[selected_user_display]
-            user_data = date_data[selected_user_id]
-            
-            # Show individual processes
-            if user_data['processes']:
-                st.write(f"**Individual Processes for {selected_user_display}:**")
-                
-                # Format the processes data for better display
-                formatted_processes = []
-                for process in user_data['processes']:
-                    formatted_process = process.copy()
-                    # Combine failed onboardings with discarded candidates
-                    if 'failed_onboardings' in formatted_process and 'discarded_candidates' in formatted_process:
-                        formatted_process['discarded_candidates'] = formatted_process['discarded_candidates'] + formatted_process['failed_onboardings']
-                        # Remove the failed_onboardings field
-                        del formatted_process['failed_onboardings']
-                    # Format verification types for better display
-                    if 'verification_types_count' in formatted_process:
-                        verification_types = formatted_process['verification_types_count']
-                        formatted_process['verification_types_count'] = format_verification_types(verification_types)
-                    formatted_processes.append(formatted_process)
-                
-                process_df = pd.DataFrame(formatted_processes)
-                st.dataframe(
-                    process_df, 
-                    width='stretch',
-                    column_config={
-                        "verification_types_count": st.column_config.TextColumn(
-                            "Verification Types",
-                            width="large",
-                            help="Types and counts of verifications for this process"
-                        )
-                    }
-                )
-            else:
-                st.write("No processes found for this user.")
-            
-            col1, col2 = st.columns([1, 3])
-            
-            with col1:
-                 try:
-                     # Create DataFrame for Excel export
-                     excel_df = create_excel_dataframe(date_data, selected_date)
-                     
-                     if not excel_df.empty:
-                         # Create Excel buffer
-                         excel_buffer = create_excel_buffer(excel_df)
-                         
-                         # Direct download button
-                         st.download_button(
-                             label="Download Excel",
-                             data=excel_buffer,
-                             file_name=f"new_initiation_portal_stats_{selected_date.replace('/', '_')}.xlsx",
-                             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-                             help="Click to download the Excel file",
-                             type="primary"
-                         )
-                     else:
-                         st.warning("No data available for Excel export.")
-                         
-                 except Exception as e:
-                     st.error(f"Error creating Excel file: {str(e)}")
-
-
-        
+                    st.markdown(verification_text, unsafe_allow_html=True)
     
+    # User selector for detailed process view
+    st.markdown("---")
+    st.markdown("### 🔍 Detailed Process Information")
+    
+    # Create a mapping for the selectbox (display name -> user_id)
+    user_display_options = {get_user_display_name(user_id): user_id for user_id in period_data.keys()}
+    
+    selected_user_display = st.selectbox(
+        "Select a user to view their individual processes:",
+        list(user_display_options.keys()),
+        key=f"user_selector_{period_type}"
+    )
+    
+    if selected_user_display:
+        selected_user_id = user_display_options[selected_user_display]
+        user_data = period_data[selected_user_id]
+        
+        # Show individual processes
+        if user_data['processes']:
+            st.write(f"**Individual Processes for {selected_user_display}:**")
+            
+            # Format the processes data for better display
+            formatted_processes = []
+            for process in user_data['processes']:
+                formatted_process = process.copy()
+                # Combine failed onboardings with discarded candidates
+                if 'failed_onboardings' in formatted_process and 'discarded_candidates' in formatted_process:
+                    formatted_process['discarded_candidates'] = formatted_process['discarded_candidates'] + formatted_process['failed_onboardings']
+                    # Remove the failed_onboardings field
+                    del formatted_process['failed_onboardings']
+                # Format verification types for better display
+                if 'verification_types_count' in formatted_process:
+                    verification_types = formatted_process['verification_types_count']
+                    formatted_process['verification_types_count'] = format_verification_types(verification_types)
+                formatted_processes.append(formatted_process)
+            
+            process_df = pd.DataFrame(formatted_processes)
+            st.dataframe(
+                process_df, 
+                width='stretch',
+                column_config={
+                    "verification_types_count": st.column_config.TextColumn(
+                        "Verification Types",
+                        width="large",
+                        help="Types and counts of verifications for this process"
+                    )
+                }
+            )
+        else:
+            st.write("No processes found for this user.")
+        
+        col1, col2 = st.columns([1, 3])
+        
+        with col1:
+             try:
+                 # Create DataFrame for Excel export
+                 excel_df = create_excel_dataframe(period_data, selected_period)
+                 
+                 if not excel_df.empty:
+                     # Create Excel buffer
+                     excel_buffer = create_excel_buffer(excel_df)
+                     
+                     # Direct download button
+                     file_prefix = "monthly" if period_type == "monthly" else "daily"
+                     st.download_button(
+                         label="Download Excel",
+                         data=excel_buffer,
+                         file_name=f"{file_prefix}_initiation_portal_stats_{selected_period.replace('/', '_')}.xlsx",
+                         mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                         help="Click to download the Excel file",
+                         type="primary"
+                     )
+                 else:
+                     st.warning("No data available for Excel export.")
+                     
+             except Exception as e:
+                 st.error(f"Error creating Excel file: {str(e)}")
+
     # Footer
     st.markdown("---")
 
