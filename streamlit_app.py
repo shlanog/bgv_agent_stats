@@ -25,8 +25,14 @@ USER_ID_MAP = {
     "710200": "Shivam Kumar",
     "358250": "Sonu Kumar",
     "605016": "Mohammad Sameen",
-    "600438": "Pankaj Katyura"
-
+    "600438": "Pankaj Katyura",
+    "699728": "Soral Singh",
+    "397646": "Kuldeep Adhikari",
+    "1484439": "Giridhar Chennuru",
+    "1298474": "Yogesh Chaudhary",
+    "858351": "Kajal Kumari",
+    "699694": "Ranjan Sahu",
+    "158897": "Mohammad Shebaz",
 }
 
 def get_user_display_name(user_id):
