@@ -33,6 +33,11 @@ USER_ID_MAP = {
     "858351": "Kajal Kumari",
     "699694": "Ranjan Sahu",
     "158897": "Mohammad Shebaz",
+    "458444": "Farjul Islam",
+    "465826": "Manish Kumar",
+    "1013467": "Mohammad Aaqib",
+    "327540": "Mohammed Shahrukh",
+    "1009828": "Payal Negi",
 }
 
 def get_user_display_name(user_id):
