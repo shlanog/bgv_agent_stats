@@ -277,6 +277,27 @@ def display_monthly_stats():
         
         display_stats_content(month_data, selected_month, "monthly")
 
+def calculate_excel_stats(period_data):
+    """Calculate Excel-related statistics for the period"""
+    total_processes_with_excel = 0
+    total_individuals_with_excel = 0
+    
+    for user_data in period_data.values():
+        for process in user_data['processes']:
+            excel_document = process.get('excel_document', '')
+            # Check if excel_document has a value (handle both dict with s3_url and string)
+            has_excel = False
+            if isinstance(excel_document, dict) and excel_document.get('s3_url'):
+                has_excel = True
+            elif isinstance(excel_document, str) and excel_document:
+                has_excel = True
+            
+            if has_excel:
+                total_processes_with_excel += 1
+                total_individuals_with_excel += process.get('total_individuals', 0)
+    
+    return total_processes_with_excel, total_individuals_with_excel
+
 def display_stats_content(period_data, selected_period, period_type):
     """Common function to display stats content for both daily and monthly views"""
     
@@ -289,7 +310,10 @@ def display_stats_content(period_data, selected_period, period_type):
     overall_discarded = sum(user_data['summary']['discarded_candidates'] for user_data in period_data.values()) + overall_failed
     overall_verifications_initiated = sum(user_data['summary']['verifications_initiated'] for user_data in period_data.values())
     
-    # Display overall metrics in two rows for better responsiveness
+    # Calculate Excel statistics
+    total_processes_with_excel, total_individuals_with_excel = calculate_excel_stats(period_data)
+    
+    # Display overall metrics in three rows for better responsiveness
     # First row - main metrics
     col1, col2, col3 = st.columns(3)
     
@@ -312,8 +336,20 @@ def display_stats_content(period_data, selected_period, period_type):
         st.metric("🗑️ Discarded Candidates", overall_discarded)
     
     with col6:
-        if period_type == "monthly":
-            st.metric("📊 Total Processes", total_processes)
+        st.metric("📊 Total Processes", total_processes)
+    
+    # Third row - Excel metrics
+    col7, col8, col9 = st.columns(3)
+    
+    with col7:
+        st.metric("📄 Processes with Excel", total_processes_with_excel)
+    
+    with col8:
+        st.metric("👥 Individuals with Excel", total_individuals_with_excel)
+    
+    with col9:
+        # Empty column for alignment
+        pass
     
     st.markdown("---")
     
@@ -324,14 +360,33 @@ def display_stats_content(period_data, selected_period, period_type):
     table_data = []
     for user_id, user_data in period_data.items():    
         summary = user_data['summary']
+        
+        # Calculate Excel statistics for this user
+        user_processes_with_excel = 0
+        user_individuals_with_excel = 0
+        
+        for process in user_data['processes']:
+            excel_document = process.get('excel_document', '')
+            # Check if excel_document has a value (handle both dict with s3_url and string)
+            has_excel = False
+            if isinstance(excel_document, dict) and excel_document.get('s3_url'):
+                has_excel = True
+            elif isinstance(excel_document, str) and excel_document:
+                has_excel = True
+            
+            if has_excel:
+                user_processes_with_excel += 1
+                user_individuals_with_excel += process.get('total_individuals', 0)
 
         table_data.append({
             'User': get_user_display_name(user_id),
-            'Processes': len(user_data['processes']),
+            'Total Processes': len(user_data['processes']),
             'Total Individuals': summary['total_individuals'],
             'Successful': summary['successful_onboardings'],
             'Discarded': summary['discarded_candidates'] + summary['failed_onboardings'],
-            'Verifications Initiated': summary.get('verifications_initiated', 0)
+            'Verifications Initiated': summary.get('verifications_initiated', 0),
+            'Total Processes with Excel': user_processes_with_excel,
+            'Total Individuals with Excel': user_individuals_with_excel
         })
     
     # Sort by total individuals (descending)
@@ -459,6 +514,16 @@ def display_stats_content(period_data, selected_period, period_type):
                 if 'verification_types_count' in formatted_process:
                     verification_types = formatted_process['verification_types_count']
                     formatted_process['verification_types_count'] = format_verification_types(verification_types)
+                # Extract s3_url from excel_document for better display
+                if 'excel_document' in formatted_process:
+                    excel_doc = formatted_process['excel_document']
+                    if isinstance(excel_doc, dict) and 's3_url' in excel_doc:
+                        formatted_process['Document URL'] = excel_doc['s3_url']
+                    elif isinstance(excel_doc, str):
+                        formatted_process['Document URL'] = excel_doc
+                    else:
+                        formatted_process['Document URL'] = ''
+                    del formatted_process['excel_document']
                 formatted_processes.append(formatted_process)
             
             process_df = pd.DataFrame(formatted_processes)
@@ -470,6 +535,11 @@ def display_stats_content(period_data, selected_period, period_type):
                         "Verification Types",
                         width="large",
                         help="Types and counts of verifications for this process"
+                    ),
+                    "Document URL": st.column_config.TextColumn(
+                        "Document URL",
+                        width="medium",
+                        help="URL link to the Excel document for this process"
                     )
                 }
             )
