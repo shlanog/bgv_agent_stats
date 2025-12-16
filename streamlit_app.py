@@ -338,19 +338,6 @@ def display_stats_content(period_data, selected_period, period_type):
     with col6:
         st.metric("📊 Total Processes", total_processes)
     
-    # Third row - Excel metrics
-    col7, col8, col9 = st.columns(3)
-    
-    with col7:
-        st.metric("📄 Processes with Excel", total_processes_with_excel)
-    
-    with col8:
-        st.metric("👥 Individuals with Excel", total_individuals_with_excel)
-    
-    with col9:
-        # Empty column for alignment
-        pass
-    
     st.markdown("---")
     
     # Single section with user summary and details
@@ -364,6 +351,9 @@ def display_stats_content(period_data, selected_period, period_type):
         # Calculate Excel statistics for this user
         user_processes_with_excel = 0
         user_individuals_with_excel = 0
+        user_successful_with_excel = 0
+        user_discarded_with_excel = 0
+        user_verifications_with_excel = 0
         
         for process in user_data['processes']:
             excel_document = process.get('excel_document', '')
@@ -377,16 +367,40 @@ def display_stats_content(period_data, selected_period, period_type):
             if has_excel:
                 user_processes_with_excel += 1
                 user_individuals_with_excel += process.get('total_individuals', 0)
+                user_successful_with_excel += process.get('successful_onboardings', 0)
+                user_discarded_with_excel += process.get('discarded_candidates', 0) + process.get('failed_onboardings', 0)
+                user_verifications_with_excel += process.get('verifications_initiated', 0)
+
+        # Calculate documents-only statistics (total minus Excel)
+        total_processes = len(user_data['processes'])
+        total_individuals = summary['total_individuals']
+        total_successful = summary['successful_onboardings']
+        total_discarded = summary['discarded_candidates'] + summary['failed_onboardings']
+        total_verifications = summary.get('verifications_initiated', 0)
+        
+        user_processes_documents_only = total_processes - user_processes_with_excel
+        user_individuals_documents_only = total_individuals - user_individuals_with_excel
+        user_successful_documents_only = total_successful - user_successful_with_excel
+        user_discarded_documents_only = total_discarded - user_discarded_with_excel
+        user_verifications_documents_only = total_verifications - user_verifications_with_excel
 
         table_data.append({
             'User': get_user_display_name(user_id),
-            'Total Processes': len(user_data['processes']),
-            'Total Individuals': summary['total_individuals'],
-            'Successful': summary['successful_onboardings'],
-            'Discarded': summary['discarded_candidates'] + summary['failed_onboardings'],
-            'Verifications Initiated': summary.get('verifications_initiated', 0),
-            'Total Processes with Excel': user_processes_with_excel,
-            'Total Individuals with Excel': user_individuals_with_excel
+            'Total Processes': total_processes,
+            'Total Individuals': total_individuals,
+            'Successful': total_successful,
+            'Discarded': total_discarded,
+            'Verifications Initiated': total_verifications,
+            'Processes with Excel': user_processes_with_excel,
+            'Individuals with Excel': user_individuals_with_excel,
+            'Successful with Excel': user_successful_with_excel,
+            'Discarded with Excel': user_discarded_with_excel,
+            'Verifications Initiated with Excel': user_verifications_with_excel,
+            'Processes with Documents Only': user_processes_documents_only,
+            'Individuals with Documents Only': user_individuals_documents_only,
+            'Successful with Documents Only': user_successful_documents_only,
+            'Discarded with Documents Only': user_discarded_documents_only,
+            'Verifications Initiated with Documents Only': user_verifications_documents_only
         })
     
     # Sort by total individuals (descending)
