@@ -137,7 +137,7 @@ def create_excel_buffer(df):
 # Load data and convert format if needed
 def load_data():
     try:
-        with open('data_by_date.json', 'r') as f:
+        with open('data_by_date_recent.json', 'r') as f:
             data = json.load(f)
         
         # Check if data needs conversion (old format detection)
@@ -177,16 +177,16 @@ def load_data():
         
         return data
     except FileNotFoundError:
-        st.error("Data file 'data_by_date.json' not found. Please run the query script first.")
+        st.error("Data file 'data_by_date_recent.json' not found. Please run the query script first.")
         return {}
 
 def load_monthly_data():
     try:
-        with open('data_by_month.json', 'r') as f:
+        with open('data_by_month_recent.json', 'r') as f:
             data = json.load(f)
         return data
     except FileNotFoundError:
-        st.error("Monthly data file 'data_by_month.json' not found. Please run the monthly query script first.")
+        st.error("Monthly data file 'data_by_month_recent.json' not found. Please run the monthly query script first.")
         return {}
 
 def main():
